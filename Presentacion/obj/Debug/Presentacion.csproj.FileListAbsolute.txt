@@ -1,0 +1,16 @@
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Presentacion.exe.config
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Login.resources
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Principal.resources
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Presentacion.exe
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Presentacion.pdb
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Common.dll
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Dominio.dll
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\AccesoDatos.dll
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Common.pdb
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Dominio.pdb
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\AccesoDatos.pdb
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.exe
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.pdb

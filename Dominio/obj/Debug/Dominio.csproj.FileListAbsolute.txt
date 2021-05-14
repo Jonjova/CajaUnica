@@ -1,0 +1,9 @@
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\bin\Debug\Dominio.dll
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\bin\Debug\Dominio.pdb
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\bin\Debug\AccesoDatos.dll
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\bin\Debug\AccesoDatos.pdb
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\obj\Debug\Dominio.dll
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\obj\Debug\Dominio.pdb
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\bin\Debug\Common.dll
+c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\bin\Debug\Common.pdb

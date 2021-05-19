@@ -45,7 +45,7 @@ namespace AccesoDatos
         public void AnyMethod() {
             if (LoginUsuarioCache.cargo == Cargos.Administrador)
             {
-
+                //hola
             }
             if (LoginUsuarioCache.cargo ==Cargos.Recepcionista || LoginUsuarioCache.cargo == Cargos.Contador)
             {

@@ -14,3 +14,5 @@ c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\
 c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\AccesoDatos.pdb
 c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.exe
 c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.DiseForm.resources
+C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Bunifu_UI_v1.5.3.dll

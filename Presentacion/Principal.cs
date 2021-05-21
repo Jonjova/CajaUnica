@@ -20,19 +20,20 @@ namespace Presentacion
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             CargarDataUsuario();
-            if (LoginUsuarioCache.cargo == Cargos.Contador)
+            if (LoginUsuarioCache.ID_ROL == Cargos.Digitador)
             {
                 btnprod.Enabled = false;
                 btnVentas.Enabled = false;
                 btnClientes.Enabled = false;
                 btnPoveedor.Enabled = false;
                 btnCompras.Enabled = false;
+
             }
-            if (LoginUsuarioCache.cargo == Cargos.Recepcionista)
+            if (LoginUsuarioCache.ID_ROL == Cargos.Digitador)
             {
                 btnReportes.Enabled = false;
             }
-            if (LoginUsuarioCache.cargo == Cargos.Administrador)
+            if (LoginUsuarioCache.ID_ROL == Cargos.Administrador)
             {
 
             }
@@ -120,9 +121,9 @@ namespace Presentacion
         }
 
         public void CargarDataUsuario() {
-            lblNombre.Text = LoginUsuarioCache.nombre + ", "+ LoginUsuarioCache.apellido;
-            lblCargo.Text = LoginUsuarioCache.cargo;
-            lblcorreo.Text = LoginUsuarioCache.email;
+            lblNombre.Text = LoginUsuarioCache.NOMBRE_USUARIO + ", "+ LoginUsuarioCache.APELLIDO_USUARIO;
+            lblCargo.Text = LoginUsuarioCache.ID_ROL.ToString();
+           // lblcorreo.Text = LoginUsuarioCache.;
             
         }
     }

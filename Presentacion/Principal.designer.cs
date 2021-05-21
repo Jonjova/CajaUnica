@@ -88,7 +88,7 @@
             this.cerrarSesion.ForeColor = System.Drawing.Color.Transparent;
             this.cerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("cerrarSesion.Image")));
             this.cerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cerrarSesion.Location = new System.Drawing.Point(3, 563);
+            this.cerrarSesion.Location = new System.Drawing.Point(3, 554);
             this.cerrarSesion.Name = "cerrarSesion";
             this.cerrarSesion.Size = new System.Drawing.Size(241, 40);
             this.cerrarSesion.TabIndex = 18;

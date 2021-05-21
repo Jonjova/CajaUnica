@@ -8,8 +8,8 @@ namespace Common.cache
 {
     public struct Cargos
     {
-        public const string Administrador = "Administrador";
-        public const string Recepcionista = "Recepcionista";
-        public const string Contador = "Contador";
+        public const int Administrador = 1;
+        public const int Digitador = 2;
+        //public const string Contador = "Contador";
     }
 }

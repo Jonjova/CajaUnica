@@ -13,7 +13,7 @@ namespace AccesoDatos
         public ConexionSQL()
         {
             //esta cadena la podemos generar en el explorador de servidores 
-            conexString = "Data Source=.;Initial Catalog=Empresa;Integrated Security=True";
+            conexString = "Data Source=.;Initial Catalog=BDCAJA;Integrated Security=True";
         }
         protected SqlConnection obtenerConex()
         {

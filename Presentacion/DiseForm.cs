@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Runtime.InteropServices;
+using Dominio;
+using Common.cache;
 
 namespace Presentacion
 {
@@ -17,6 +19,24 @@ namespace Presentacion
         public DiseForm()
         {
             InitializeComponent();
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            CargarDataUsuario();
+            if (LoginUsuarioCache.ID_ROL == Cargos.Digitador)
+            {
+                btnViajes.Enabled = false;
+                btnMotoristas.Enabled = false;
+                btnEmpresarios.Enabled = false;
+                btnAutobuses.Enabled = false;
+                btnLugares.Enabled = false;
+            }
+            if (LoginUsuarioCache.ID_ROL == Cargos.Digitador)
+            {
+                btnReportes.Enabled = false;
+            }
+            if (LoginUsuarioCache.ID_ROL == Cargos.Administrador)
+            {
+
+            }
             ColapzarUsuario.Start();
         }
 
@@ -41,7 +61,11 @@ namespace Presentacion
 
         private void Cerrar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (MessageBox.Show("Está seguro se cerrará la aplicación?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+          
         }
 
         private void MenuSidebar_Click(object sender, EventArgs e)
@@ -91,6 +115,22 @@ namespace Presentacion
         private void Usuario_Click(object sender, EventArgs e)
         {
             ColapzarUsuario.Start();
+        }
+
+        public void CargarDataUsuario()
+        {
+            lblNombre.Text = LoginUsuarioCache.NOMBRE_USUARIO + ", " + LoginUsuarioCache.APELLIDO_USUARIO;
+            lblCargo.Text = LoginUsuarioCache.ID_ROL.ToString();
+            // lblcorreo.Text = LoginUsuarioCache.;
+
+        }
+
+        private void cerrarSesion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿está seguro se serrará esta sesión?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

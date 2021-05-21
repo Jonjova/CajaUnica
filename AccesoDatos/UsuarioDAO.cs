@@ -18,7 +18,7 @@ namespace AccesoDatos
                 using (var command = new SqlCommand())
                 {
                     command.Connection = conex;
-                    command.CommandText = "select * from Usuarios where nombreUsuario=@nombreUsuario and contrasena= @contrasena";
+                    command.CommandText = "select * from TBL_USUARIOS where NOMBRE_USUARIO=@nombreUsuario and CONTRASENA=@contrasena";
                     command.Parameters.AddWithValue("@nombreUsuario", usuario);
                     command.Parameters.AddWithValue("@contrasena", contra);
                     command.CommandType = CommandType.Text;
@@ -27,11 +27,12 @@ namespace AccesoDatos
                     {
                         while (reader.Read())
                         {
-                            LoginUsuarioCache.usuarioID = reader.GetInt32(0);
-                            LoginUsuarioCache.nombre = reader.GetString(3);
-                            LoginUsuarioCache.apellido = reader.GetString(4);
-                            LoginUsuarioCache.cargo = reader.GetString(5);
-                            LoginUsuarioCache.email = reader.GetString(6);
+                            LoginUsuarioCache.ID_USUARIO = reader.GetInt32(0);
+                            //LoginUsuarioCache.CONTRASENA = reader.GetString(2);
+                            LoginUsuarioCache.NOMBRE_USUARIO = reader.GetString(2);
+                            LoginUsuarioCache.APELLIDO_USUARIO = reader.GetString(3);
+                            LoginUsuarioCache.ID_ROL = reader.GetInt32(4);
+                            LoginUsuarioCache.FECHA_CREA = reader.GetDateTime(5);
                         }
                         return true;
                     }
@@ -43,11 +44,11 @@ namespace AccesoDatos
             }
         }
         public void AnyMethod() {
-            if (LoginUsuarioCache.cargo == Cargos.Administrador)
+            if (LoginUsuarioCache.ID_ROL == Cargos.Administrador)
             {
                 //hola
             }
-            if (LoginUsuarioCache.cargo ==Cargos.Recepcionista || LoginUsuarioCache.cargo == Cargos.Contador)
+            if (LoginUsuarioCache.ID_ROL ==Cargos.Digitador)
             {
                 
             }

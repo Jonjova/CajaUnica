@@ -33,7 +33,7 @@ namespace Presentacion
                     var validaLogin = user.LoginUser(txtUsuario.Text, txtContra.Text);
                     if (validaLogin == true)
                     {
-                        Principal mainMenu = new Principal();
+                        DiseForm mainMenu = new DiseForm();
                         mainMenu.Show();
                         mainMenu.FormClosed += Logout;
                         this.Hide();

@@ -68,6 +68,23 @@ namespace Presentacion
           
         }
 
+        private void AbrirFormEnPanel(object Formhijo)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+        }
+
+        private void btnAutobuses_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormAutobuses());
+        }
+
         private void MenuSidebar_Click(object sender, EventArgs e)
         {
             if (Sidebar.Width == 240)
@@ -132,5 +149,6 @@ namespace Presentacion
                 this.Close();
             }
         }
+        
     }
 }

@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AccesoDatos;
+using System.Data;
 
-namespace AccesoDatos
+namespace Dominio
 {
-    public class Autobuses
+    public class AutobusesModelo:ConexionSQL
     {
         private int ID_AUTOBUS;
         private string NUM_PLACA;
@@ -65,8 +67,19 @@ namespace AccesoDatos
             set { ID_USUARIO_CREA = value; }
         }
 
+        public DataSet ConsultarTodosAutobuses()
+        {
+            string cadenaSQLConsultar = "SELECT * FROM TBL_AUTOBUSES";
+            DataSet ConsultaResultante = ConsultarSQL(cadenaSQLConsultar);
+            return ConsultaResultante;
+        }
+
+        public DataSet ConsultarAutobuses(string id)
+        {
+            string cadenaSQLConsultar = "If Exists(Select ID_AUTOBUS From TBL_AUTOBUSES Where ID_AUTOBUS =  '" + id + "') Begin Select* From TBL_AUTOBUSES Where ID_AUTOBUS = '" + id + "' End Else Begin Select COUNT(ID_AUTOBUS) as 'NO EXISTE' From TBL_AUTOBUSES Where ID_AUTOBUS = '" + id + "' End " + "";
+            DataSet ConsultaResultante = ConsultarSQL(cadenaSQLConsultar);
+            return ConsultaResultante;
+        }
+
     }
-
-
-
 }

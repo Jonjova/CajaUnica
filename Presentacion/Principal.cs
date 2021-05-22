@@ -99,7 +99,7 @@ namespace Presentacion
 
         private void btnprod_Click(object sender, EventArgs e)
         {
-            //AbrirFormEnPanel(new Productos());
+            AbrirFormEnPanel(new FormAutobuses());
         }
 
         private void btnlogoInicio_Click(object sender, EventArgs e)
@@ -123,8 +123,7 @@ namespace Presentacion
         public void CargarDataUsuario() {
             lblNombre.Text = LoginUsuarioCache.NOMBRE_USUARIO + ", "+ LoginUsuarioCache.APELLIDO_USUARIO;
             lblCargo.Text = LoginUsuarioCache.ID_ROL.ToString();
-           // lblcorreo.Text = LoginUsuarioCache.;
-            
+           // lblcorreo.Text = LoginUsuarioCache.;    
         }
     }
 }

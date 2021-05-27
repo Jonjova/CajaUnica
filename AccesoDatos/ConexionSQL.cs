@@ -10,16 +10,21 @@ namespace AccesoDatos
 {
     public abstract class ConexionSQL
     {
-
+  
+        
         private string mensaje;
         SqlConnection conn;
         SqlTransaction tran;
-        public string Mensaje;
+        public string Mensaje
+        {
+            get { return mensaje; }
+            set { mensaje = value; }
+        }
         public readonly string conexString;
         public ConexionSQL()
         {
             //esta cadena la podemos generar en el explorador de servidores 
-            conexString = "Data Source=.;Initial Catalog=BDCAJA;Integrated Security=True";
+            conexString = "Data Source=.;Initial Catalog=USAM;Integrated Security=True";
         }
         protected SqlConnection obtenerConex()
         {
@@ -31,6 +36,7 @@ namespace AccesoDatos
             try
             {
                 conn = obtenerConex();
+                conn.Open();
                 SqlDataAdapter objRes = new SqlDataAdapter(SentenciaSQL, conn);
                 DataSet datos = new DataSet();
                 objRes.Fill(datos, "TablaConsultada");
@@ -42,6 +48,30 @@ namespace AccesoDatos
                 DataSet datos2 = new DataSet();
                 mensaje = "ERROR FATALLITY: " + MiExc.Message;
                 return datos2;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public bool EjecutarSQL(String SentenciaSQL)
+        {
+            try
+            {
+                conn = obtenerConex();
+                conn.Open();
+                SqlCommand miComando = new SqlCommand();
+                miComando.Connection = conn;
+                miComando.CommandText = SentenciaSQL;
+                miComando.ExecuteNonQuery();
+                mensaje = "Proceso Ejecutado con Exito";
+                return true;
+            }
+            catch (Exception e)
+            {
+                mensaje = "Tenemos el siguiente Fatality: " + e.Message;
+                return false;
             }
             finally
             {

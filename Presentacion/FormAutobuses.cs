@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dominio;
+using System.Diagnostics;
 
 namespace Presentacion
 {
@@ -15,14 +16,17 @@ namespace Presentacion
     {
         public FormAutobuses()
         {
+           
             InitializeComponent();
+            //Mostrar combobox de empresarios
+            obtEmpresarios();
+            //Mostrar combobox de usuarios
+            obtUsuario();
+            //this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        #region -> Definición de métodos
+        //consultar tabla autobuses por id
         private void btnConsultar_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtIDAutobuses.Text ?? string.Empty))
@@ -48,6 +52,7 @@ namespace Presentacion
             }
         }
 
+        //Consultar todos los datos de la tabla de autobuses 
         private void btnVerTodos_Click(object sender, EventArgs e)
         {
             AutobusesModelo ObjAutobuses = new AutobusesModelo();
@@ -68,5 +73,198 @@ namespace Presentacion
         {
             this.Close();
         }
+
+        //Insertar datos 
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            AutobusesModelo ObjBuses = new AutobusesModelo();
+            try
+            {
+                ObjBuses.id = int.Parse(txtID.Text);
+                ObjBuses.placa = txtNumPlaca.Text;
+                ObjBuses.numAsientos = int.Parse(txtNumAsientos.Text);
+                ObjBuses.marca = txtMarca.Text;
+                ObjBuses.modelo = txtModelo.Text;
+                ObjBuses.anioFabricacion = Convert.ToDateTime(dtpAnioFabrica.Value.ToShortDateString());
+                ObjBuses.idEmpresario = int.Parse(txtIdEmpresario.SelectedValue.ToString());
+                ObjBuses.idEUsuarioCrea = int.Parse(txtIDUsuario.SelectedValue.ToString());
+                ObjBuses.fechaCrea = Convert.ToDateTime(dtpFechacrea.Value.ToShortDateString());
+                bool respuestaSQL = ObjBuses.InsertarAutobuses();
+                if (respuestaSQL == true)
+                {
+                    MessageBox.Show("Los datos del nuevo Autobuses fueron insertados correctamente");
+                    txtID.Text = "";
+                    txtNumPlaca.Text = "";
+                    txtNumAsientos.Text = "";
+                    txtMarca.Text = "";
+                    txtModelo.Text = "";
+                    dtpAnioFabrica.Text = "";
+                    txtIdEmpresario.Text = "";
+                    txtIDUsuario.Text = "";
+                    dtpFechacrea.Text = "";
+
+                }
+                else
+                {
+                    MessageBox.Show("error");
+                    MessageBox.Show(ObjBuses.Mensaje);
+                }
+            }
+            catch (Exception Ex)
+            {
+                var trace = new StackTrace(Ex, true);
+                var frame = trace.GetFrame(0);
+                var line = frame.GetFileLineNumber();
+                MessageBox.Show("Error!: " + Ex.Message + " " + ObjBuses.Mensaje );
+            }
+        }
+
+        //Llenado combobox de empresarios 
+        private void obtEmpresarios()
+        {
+            AutobusesModelo ObjAutobuses = new AutobusesModelo();
+            try
+            {
+                DataSet DatosAutobuses = ObjAutobuses.ConsultarEmpresarios();
+                Empresario.DataSource = DatosAutobuses.Tables["TablaConsultada"].DefaultView;
+                Empresario.DisplayMember = "NOMBRE_EMPRESARIO";
+                Empresario.ValueMember = "ID_EMPRESARIO";
+                txtIDUsuario.DataSource = DatosAutobuses.Tables["TablaConsultada"].DefaultView;
+                txtIDUsuario.DisplayMember = "NOMBRE_EMPRESARIO";
+                txtIDUsuario.ValueMember = "ID_EMPRESARIO";
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + ObjAutobuses.Mensaje);
+            }
+        }
+
+        //Llenado combobox de usuario 
+        private void obtUsuario()
+        {
+            AutobusesModelo ObjAutobuses = new AutobusesModelo();
+            try
+            {
+                DataSet DatosAutobuses = ObjAutobuses.ConsultarUsuarios();
+                Usuario.DataSource = DatosAutobuses.Tables["TablaConsultada"].DefaultView;
+                Usuario.DisplayMember = "NOMBRE_USUARIO";
+                Usuario.ValueMember = "ID_USUARIO";
+
+                txtIdEmpresario.DataSource = DatosAutobuses.Tables["TablaConsultada"].DefaultView;
+                txtIdEmpresario.DisplayMember = "NOMBRE_USUARIO";
+                txtIdEmpresario.ValueMember = "ID_USUARIO";
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + ObjAutobuses.Mensaje);
+            }
+        }
+
+        private void btnObtener_Click(object sender, EventArgs e)
+        {
+            AutobusesModelo ObjAutobuses = new AutobusesModelo();
+            try
+            {
+                DataSet DatosAutobuses = ObjAutobuses.obtenerAutobuses(txtIDAutobus.Text);
+                int numregistros = DatosAutobuses.Tables["TablaConsultada"].Rows.Count;
+                if (numregistros == 0)
+                {
+                    MessageBox.Show("No existe en la tabla Autobuses este identificador");
+                }
+                else
+                {
+                    NumeroMarc.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["NUM_PLACA"].ToString();
+                    NumAsientos.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["NUM_ASIENTOS"].ToString();
+                    marca.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["MARCA"].ToString();
+
+                    Modelo.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["MODELO"].ToString();
+                    AnioFabrica.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["ANIO_FABRICACION"].ToString();
+                    Empresario.SelectedValue = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["ID_EMPRESARIO"].ToString();
+
+                    Usuario.SelectedValue = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["ID_USUARIO_CREA"].ToString();
+                    Fechacrea.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["FECHA_CREACION"].ToString();
+
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + ObjAutobuses.Mensaje);
+            }
+
+        }
+        //Actualizar Datos Auobuses
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            AutobusesModelo ObjBuses = new AutobusesModelo();
+            try
+            {
+                ObjBuses.id = int.Parse(txtIDAutobus.Text);
+                ObjBuses.placa = NumeroMarc.Text;
+                ObjBuses.numAsientos = int.Parse(NumAsientos.Text);
+                ObjBuses.marca = marca.Text;
+                ObjBuses.modelo = Modelo.Text;
+                ObjBuses.anioFabricacion = Convert.ToDateTime(AnioFabrica.Value.ToShortDateString());
+                ObjBuses.idEmpresario = int.Parse(Empresario.SelectedValue.ToString());
+                ObjBuses.idEUsuarioCrea = int.Parse(Usuario.SelectedValue.ToString());
+                ObjBuses.fechaCrea = Convert.ToDateTime(Fechacrea.Value.ToShortDateString());
+                bool respuestaSQL = ObjBuses.ActualizarAutobuses();
+                if (respuestaSQL == true)
+                {
+                    MessageBox.Show("Los datos fueron actualizados correctamente");
+                    txtIDAutobus.Text = "";
+                    NumeroMarc.Text = "";
+                    NumAsientos.Text = "";
+                    marca.Text = "";
+                    Modelo.Text = "";
+                    AnioFabrica.Text = "";
+                    if (Empresario.Text == "") { }
+                    if (Usuario.Text == "") { }
+                    Fechacrea.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("error");
+                    MessageBox.Show(ObjBuses.Mensaje);
+                }
+            }
+            catch (Exception Ex)
+            {
+              
+                MessageBox.Show("Error!: " + Ex.Message + " " + ObjBuses.Mensaje);
+            }
+        }
+        //Eliminar datos
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            AutobusesModelo ObjBuses = new AutobusesModelo();
+            try
+            {
+                bool respuestaSQL = ObjBuses.EliminarAutobuses(txtIDAutobus.Text);
+                if (respuestaSQL == true)
+                {
+                    MessageBox.Show("Los datos de autobuses fueron Eliminados correctamente");
+                    txtIDAutobus.Text = "";
+                    NumeroMarc.Text = "";
+                    NumAsientos.Text = "";
+                    marca.Text = "";
+                    Modelo.Text = "";
+                    AnioFabrica.Text = "";
+                    Empresario.Text = "";
+                    Usuario.Text = "";
+                    Fechacrea.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("error");
+                    MessageBox.Show(ObjBuses.Mensaje);
+                }
+            }
+            catch (Exception Ex)
+            {
+                
+                MessageBox.Show("Error!: " + Ex.Message + " " + ObjBuses.Mensaje );
+            }
+        }
+        #endregion
     }
 }

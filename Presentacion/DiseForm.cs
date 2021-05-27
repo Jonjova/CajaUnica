@@ -136,7 +136,7 @@ namespace Presentacion
 
         public void CargarDataUsuario()
         {
-            lblNombre.Text = LoginUsuarioCache.NOMBRE_USUARIO + ", " + LoginUsuarioCache.APELLIDO_USUARIO;
+            lblNombre.Text = LoginUsuarioCache.NOMBRE_USUARIO ;
             lblCargo.Text = LoginUsuarioCache.ID_ROL.ToString();
             // lblcorreo.Text = LoginUsuarioCache.;
 

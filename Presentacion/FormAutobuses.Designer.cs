@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAutobuses));
-            this.tableAdapterManager1 = new Presentacion.BDCAJADataSetTableAdapters.TableAdapterManager();
+            
             this.tabPconsultar = new System.Windows.Forms.TabPage();
             this.MostrarAutobuses = new System.Windows.Forms.DataGridView();
             this.IdAutobus = new System.Windows.Forms.Label();
@@ -92,9 +92,7 @@
             // 
             // tableAdapterManager1
             // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.Connection = null;
-            this.tableAdapterManager1.UpdateOrder = Presentacion.BDCAJADataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+           
             // 
             // tabPconsultar
             // 
@@ -625,7 +623,7 @@
         }
 
         #endregion
-        private BDCAJADataSetTableAdapters.TableAdapterManager tableAdapterManager1;
+        
         private System.Windows.Forms.TabPage tabPconsultar;
         private System.Windows.Forms.Button btnVerTodos;
         private System.Windows.Forms.Button btnConsultar;

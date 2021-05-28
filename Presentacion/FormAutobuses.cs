@@ -71,6 +71,7 @@ namespace Presentacion
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            //Para cerrar Formulario hijo 
             this.Close();
         }
 
@@ -85,7 +86,9 @@ namespace Presentacion
                 ObjBuses.numAsientos = int.Parse(txtNumAsientos.Text);
                 ObjBuses.marca = txtMarca.Text;
                 ObjBuses.modelo = txtModelo.Text;
+                //Si el tipo de datos es una fecha sin hora convertimos a ha fecha corta 
                 ObjBuses.anioFabricacion = Convert.ToDateTime(dtpAnioFabrica.Value.ToShortDateString());
+                //SelectedValue Devuelve el contenido de la columna indicada de Empresario y Usuario en este caso el id
                 ObjBuses.idEmpresario = int.Parse(txtIdEmpresario.SelectedValue.ToString());
                 ObjBuses.idEUsuarioCrea = int.Parse(txtIDUsuario.SelectedValue.ToString());
                 ObjBuses.fechaCrea = Convert.ToDateTime(dtpFechacrea.Value.ToShortDateString());
@@ -126,9 +129,11 @@ namespace Presentacion
             try
             {
                 DataSet DatosAutobuses = ObjAutobuses.ConsultarEmpresarios();
+                //Para llenar actualizar
                 Empresario.DataSource = DatosAutobuses.Tables["TablaConsultada"].DefaultView;
                 Empresario.DisplayMember = "NOMBRE_EMPRESARIO";
                 Empresario.ValueMember = "ID_EMPRESARIO";
+                //Para llenar insertar
                 txtIDUsuario.DataSource = DatosAutobuses.Tables["TablaConsultada"].DefaultView;
                 txtIDUsuario.DisplayMember = "NOMBRE_EMPRESARIO";
                 txtIDUsuario.ValueMember = "ID_EMPRESARIO";
@@ -146,10 +151,11 @@ namespace Presentacion
             try
             {
                 DataSet DatosAutobuses = ObjAutobuses.ConsultarUsuarios();
+                //Para llenar actualizar
                 Usuario.DataSource = DatosAutobuses.Tables["TablaConsultada"].DefaultView;
                 Usuario.DisplayMember = "NOMBRE_USUARIO";
                 Usuario.ValueMember = "ID_USUARIO";
-
+                //Para llenar insertar
                 txtIdEmpresario.DataSource = DatosAutobuses.Tables["TablaConsultada"].DefaultView;
                 txtIdEmpresario.DisplayMember = "NOMBRE_USUARIO";
                 txtIdEmpresario.ValueMember = "ID_USUARIO";
@@ -159,7 +165,7 @@ namespace Presentacion
                 MessageBox.Show("Fatality!: " + Ex.Message + " " + ObjAutobuses.Mensaje);
             }
         }
-
+        //Obtener los datos de tabla Autobuses
         private void btnObtener_Click(object sender, EventArgs e)
         {
             AutobusesModelo ObjAutobuses = new AutobusesModelo();
@@ -176,11 +182,10 @@ namespace Presentacion
                     NumeroMarc.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["NUM_PLACA"].ToString();
                     NumAsientos.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["NUM_ASIENTOS"].ToString();
                     marca.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["MARCA"].ToString();
-
                     Modelo.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["MODELO"].ToString();
                     AnioFabrica.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["ANIO_FABRICACION"].ToString();
+                    //SelectedValue Devuelve el contenido de la columna indicada de Empresario y Usuario en este caso el id
                     Empresario.SelectedValue = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["ID_EMPRESARIO"].ToString();
-
                     Usuario.SelectedValue = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["ID_USUARIO_CREA"].ToString();
                     Fechacrea.Text = DatosAutobuses.Tables["TablaConsultada"].Rows[0]["FECHA_CREACION"].ToString();
 
@@ -217,6 +222,7 @@ namespace Presentacion
                     marca.Text = "";
                     Modelo.Text = "";
                     AnioFabrica.Text = "";
+                    //Condicionamos el elemento al limpiar porque agrega un valor por defecto
                     if (Empresario.Text == "") { }
                     if (Usuario.Text == "") { }
                     Fechacrea.Text = "";

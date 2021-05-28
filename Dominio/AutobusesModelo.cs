@@ -121,7 +121,7 @@ namespace Dominio
             return respuestaSQL;
         }
 
-        //Obtener Autobuses por marca
+        //Obtener Autobuses por ID_AUTOBUS
         public DataSet obtenerAutobuses(string id)
         {
             string cadenaSQLConsultar = "SELECT * FROM TBL_AUTOBUSES WHERE ID_AUTOBUS = " + id + "";

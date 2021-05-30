@@ -121,14 +121,14 @@ namespace Dominio
         //llenado de combobox
         public DataSet ConsultarDepartamen()
         {
-            string cadenaSQLConsultar = "select * from DEPARTAMENTO";
+            string cadenaSQLConsultar = "select * from TBL_DEPARTAMENTO";
             DataSet ConsultaResultante = ConsultarSQL(cadenaSQLConsultar);
             return ConsultaResultante;
         }
 
         public DataSet ConsultarSexo()
         {
-            string cadenaSQLConsultar = "select * from SEXO";
+            string cadenaSQLConsultar = "select * from TBL_SEXO";
             DataSet ConsultaResultante = ConsultarSQL(cadenaSQLConsultar);
             return ConsultaResultante;
         }

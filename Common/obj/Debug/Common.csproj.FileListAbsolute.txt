@@ -3,3 +3,7 @@ c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Common\bin\Debug\
 c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Common\obj\Debug\Common.dll
 c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Common\obj\Debug\Common.pdb
 C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Common\bin\Debug\Common.dll
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Common\bin\Debug\Common.pdb
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Common\obj\Debug\Common.dll
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Common\obj\Debug\Common.pdb

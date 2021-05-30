@@ -149,6 +149,10 @@ namespace Presentacion
                 this.Close();
             }
         }
-        
+
+        private void btnEmpresarios_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Empresarios());
+        }
     }
 }

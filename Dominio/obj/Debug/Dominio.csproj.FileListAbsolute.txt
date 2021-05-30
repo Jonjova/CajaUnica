@@ -7,3 +7,12 @@ c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\obj\Debug
 c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\obj\Debug\Dominio.pdb
 c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\bin\Debug\Common.dll
 c:\users\jonjo\documents\visual studio 2015\Projects\CajaUnica\Dominio\bin\Debug\Common.pdb
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\bin\Debug\Dominio.dll
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\bin\Debug\Dominio.pdb
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\bin\Debug\AccesoDatos.dll
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\bin\Debug\Common.dll
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\bin\Debug\AccesoDatos.pdb
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\bin\Debug\Common.pdb
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\obj\Debug\Dominio.csprojResolveAssemblyReference.cache
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\obj\Debug\Dominio.dll
+C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Dominio\obj\Debug\Dominio.pdb

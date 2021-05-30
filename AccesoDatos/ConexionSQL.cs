@@ -9,8 +9,7 @@ using System.Data;
 namespace AccesoDatos
 {
     public abstract class ConexionSQL
-    {
-  
+    { 
         
         private string mensaje;
         SqlConnection conn;

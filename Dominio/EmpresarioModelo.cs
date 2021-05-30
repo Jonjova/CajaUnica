@@ -77,6 +77,8 @@ namespace Dominio
             set { FECHA_CREA = value; }
         }
 
+        DateTime dateNow =DateTime.Now;
+
         //listar empresarios
         public DataSet ConsultarTodosEmpresarios()
         {
@@ -96,7 +98,7 @@ namespace Dominio
         //insert
         public bool InsertarEmpresario()
         { 
-            string cadenaSQLInsertar = "INSERT INTO TBL_EMPRESARIOS(ID_EMPRESARIO, NOMBRE_EMPRESARIO, APELLIDO_EMPRESARIO, DIRECCION, TELEFONO, ID_USUARIO_CREA, ID_DEPARTAMENTO, ID_SEXO, FECHA_CREA) VALUES(" + this.ID_EMPRESARIO + ", '" + this.NOMBRE_EMPRESARIO + "', '" + this.APELLIDO_EMPRESARIO + "', '" + this.DIRECCION + "', '" + this.TELEFONO + "', '" + this.ID_USUARIO_CREA + "', '" + this.ID_DEPARTAMENTO + "',"+this.ID_SEXO+",'"+this.FECHA_CREA+"')";
+            string cadenaSQLInsertar = "INSERT INTO TBL_EMPRESARIOS(ID_EMPRESARIO, NOMBRE_EMPRESARIO, APELLIDO_EMPRESARIO, DIRECCION, TELEFONO, ID_USUARIO_CREA, ID_DEPARTAMENTO, ID_SEXO, FECHA_CREA) VALUES(" + this.ID_EMPRESARIO + ", '" + this.NOMBRE_EMPRESARIO + "', '" + this.APELLIDO_EMPRESARIO + "', '" + this.DIRECCION + "', '" + this.TELEFONO + "', '" + this.ID_USUARIO_CREA + "', '" + this.ID_DEPARTAMENTO + "',"+this.ID_SEXO+",GETDATE())";
             bool respuestaSQL = EjecutarSQL(cadenaSQLInsertar);
             return respuestaSQL;
         }
@@ -105,7 +107,7 @@ namespace Dominio
         //update
         public bool ActualizarEmpresario()
          {
-           string cadenaSQLActualizar = "UPDATE TBL_EMPRESARIOS SET NOMBRE_EMPRESARIO  = '" + this.NOMBRE_EMPRESARIO + "', APELLIDO_EMPRESARIO = '" + this.APELLIDO_EMPRESARIO + "',DIRECCION='" + this.DIRECCION + "',TELEFONO='" + this.TELEFONO +"',ID_USUARIO_CREA='"+this.ID_USUARIO_CREA+"',ID_DEPARTAMENTO='"+this.ID_DEPARTAMENTO+ "',ID_SEXO='" + this.ID_SEXO + "',FECHA_CREA='" + this.fecha + "' WHERE (ID_EMPRESARIO= " + this.Id_empresario + ")";
+           string cadenaSQLActualizar = "UPDATE TBL_EMPRESARIOS SET NOMBRE_EMPRESARIO  = '" + this.NOMBRE_EMPRESARIO + "', APELLIDO_EMPRESARIO = '" + this.APELLIDO_EMPRESARIO + "',DIRECCION='" + this.DIRECCION + "',TELEFONO='" + this.TELEFONO +"',ID_USUARIO_CREA='"+this.ID_USUARIO_CREA+"',ID_DEPARTAMENTO='"+this.ID_DEPARTAMENTO+ "',ID_SEXO='" + this.ID_SEXO + "' WHERE (ID_EMPRESARIO= " + this.Id_empresario + ")";
              bool respuestaSQL = EjecutarSQL(cadenaSQLActualizar);
              return respuestaSQL;
          }

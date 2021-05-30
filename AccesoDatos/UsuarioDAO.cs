@@ -29,8 +29,9 @@ namespace AccesoDatos
                         {
                             LoginUsuarioCache.ID_USUARIO = reader.GetInt32(0);                       
                             LoginUsuarioCache.NOMBRE_USUARIO = reader.GetString(2);
-                            LoginUsuarioCache.ID_ROL = reader.GetInt32(3);
-                            LoginUsuarioCache.FECHA_CREA = reader.GetDateTime(4);
+                            LoginUsuarioCache.ID_CARGO = reader.GetInt32(3);
+                            LoginUsuarioCache.ID_ROL = reader.GetInt32(4);
+                            LoginUsuarioCache.FECHA_CREA = reader.GetDateTime(5);
                         }
                         return true;
                     }

@@ -79,7 +79,6 @@ namespace Presentacion
                 objEmp.usuarioCrea = 1;
                 objEmp.id_departamento = int.Parse(comboBox1.SelectedValue.ToString());
                 objEmp.id_sexo = int.Parse(comboBox2.SelectedValue.ToString());
-                objEmp.fecha = DateTime.Parse(DateTime.Today.ToString("yyyy-MM-dd")); 
 
                 bool respuestaSQL = objEmp.InsertarEmpresario();
                 if (respuestaSQL == true)
@@ -180,7 +179,6 @@ namespace Presentacion
                 objEmp.usuarioCrea = 1;
                 objEmp.id_departamento = int.Parse(comboBox3.SelectedValue.ToString());
                 objEmp.id_sexo = int.Parse(comboBox4.SelectedValue.ToString());
-                objEmp.fecha = DateTime.Parse(DateTime.Now.ToString("dd-MM-yyyy"));
                
                 bool respuestaSQL = objEmp.ActualizarEmpresario();
                 if (respuestaSQL == true)

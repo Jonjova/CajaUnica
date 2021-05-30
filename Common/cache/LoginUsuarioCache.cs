@@ -12,6 +12,7 @@ namespace Common.cache
         public static string CONTRASENA { get; set; }
         public static string NOMBRE_USUARIO { get; set; }
         public static string APELLIDO_USUARIO { get; set; }
+        public static int ID_CARGO { get; set; }
         public static int ID_ROL { get; set; }
         public static DateTime FECHA_CREA { get; set; }
     }

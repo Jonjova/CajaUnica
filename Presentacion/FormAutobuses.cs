@@ -79,19 +79,22 @@ namespace Presentacion
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             AutobusesModelo ObjBuses = new AutobusesModelo();
+            
+            validacion();
             try
             {
+               
                 ObjBuses.id = int.Parse(txtID.Text);
                 ObjBuses.placa = txtNumPlaca.Text;
                 ObjBuses.numAsientos = int.Parse(txtNumAsientos.Text);
                 ObjBuses.marca = txtMarca.Text;
                 ObjBuses.modelo = txtModelo.Text;
                 //Si el tipo de datos es una fecha sin hora convertimos a ha fecha corta 
-                ObjBuses.anioFabricacion = Convert.ToDateTime(dtpAnioFabrica.Value.ToShortDateString());
+                ObjBuses.anioFabricacion = Convert.ToDateTime(dtpAnioFabrica.Value.ToString("yyyy-MM-dd"));
                 //SelectedValue Devuelve el contenido de la columna indicada de Empresario y Usuario en este caso el id
                 ObjBuses.idEmpresario = int.Parse(txtIdEmpresario.SelectedValue.ToString());
                 ObjBuses.idEUsuarioCrea = int.Parse(txtIDUsuario.SelectedValue.ToString());
-                ObjBuses.fechaCrea = Convert.ToDateTime(dtpFechacrea.Value.ToShortDateString());
+                ObjBuses.fechaCrea = Convert.ToDateTime(dtpFechacrea.Value.ToString("yyyy-MM-dd"));
                 bool respuestaSQL = ObjBuses.InsertarAutobuses();
                 if (respuestaSQL == true)
                 {
@@ -109,19 +112,41 @@ namespace Presentacion
                 }
                 else
                 {
-                    MessageBox.Show("error");
+                   
                     MessageBox.Show(ObjBuses.Mensaje);
                 }
             }
             catch (Exception Ex)
             {
-                var trace = new StackTrace(Ex, true);
-                var frame = trace.GetFrame(0);
-                var line = frame.GetFileLineNumber();
+               
                 MessageBox.Show("Error!: " + Ex.Message + " " + ObjBuses.Mensaje );
             }
         }
 
+        // validación de textbox
+        private void validacion()
+        {
+            if (string.IsNullOrEmpty(txtID.Text ?? string.Empty) || 
+                string.IsNullOrEmpty(txtNumPlaca.Text ?? string.Empty) || 
+                string.IsNullOrEmpty(txtNumAsientos.Text ?? string.Empty) || 
+                string.IsNullOrEmpty(txtMarca.Text ?? string.Empty) || 
+                string.IsNullOrEmpty(txtModelo.Text ?? string.Empty) || 
+                string.IsNullOrEmpty(dtpAnioFabrica.Text ?? string.Empty) || 
+                string.IsNullOrEmpty(txtIdEmpresario.Text ?? string.Empty) || 
+                string.IsNullOrEmpty(txtIDUsuario.Text ?? string.Empty) || 
+                string.IsNullOrEmpty(dtpFechacrea.Text ?? string.Empty))
+            {
+                MessageBox.Show("El campo de id es requerido \n" +
+                    "El campo de numero de placa es requerido \n" +
+                    "El campo de numero de asientos es requerido \n" + 
+                    "El campo de marca es requerido \n" + 
+                    "El campo de modelo es requerido \n" + 
+                    "El campo de año de fabricación es requerido \n" + 
+                    "El campo de empresario es requerido \n" +
+                    "El campo de usuario es requerido \n" +
+                    "El campo de fecha crea es requerido");
+            }
+        }
         //Llenado combobox de empresarios 
         private void obtEmpresarios()
         {
@@ -208,10 +233,10 @@ namespace Presentacion
                 ObjBuses.numAsientos = int.Parse(NumAsientos.Text);
                 ObjBuses.marca = marca.Text;
                 ObjBuses.modelo = Modelo.Text;
-                ObjBuses.anioFabricacion = Convert.ToDateTime(AnioFabrica.Value.ToShortDateString());
+                ObjBuses.anioFabricacion = Convert.ToDateTime(AnioFabrica.Value.ToString("yyyy-MM-dd"));
                 ObjBuses.idEmpresario = int.Parse(Empresario.SelectedValue.ToString());
                 ObjBuses.idEUsuarioCrea = int.Parse(Usuario.SelectedValue.ToString());
-                ObjBuses.fechaCrea = Convert.ToDateTime(Fechacrea.Value.ToShortDateString());
+                ObjBuses.fechaCrea = Convert.ToDateTime(Fechacrea.Value.ToString("yyyy-MM-dd"));
                 bool respuestaSQL = ObjBuses.ActualizarAutobuses();
                 if (respuestaSQL == true)
                 {
@@ -246,6 +271,7 @@ namespace Presentacion
             try
             {
                 bool respuestaSQL = ObjBuses.EliminarAutobuses(txtIDAutobus.Text);
+
                 if (respuestaSQL == true)
                 {
                     MessageBox.Show("Los datos de autobuses fueron Eliminados correctamente");
@@ -272,5 +298,26 @@ namespace Presentacion
             }
         }
         #endregion
+
+        private void FormAutobuses_Load(object sender, EventArgs e)
+        {
+            //insertar 
+            dtpAnioFabrica.Format = DateTimePickerFormat.Custom;
+            dtpAnioFabrica.CustomFormat = "MM-dd-yyyy";
+            dtpFechacrea.Format = DateTimePickerFormat.Custom;
+            dtpFechacrea.CustomFormat = "MM-dd-yyyy";
+
+            //actualizar
+            AnioFabrica.Format = DateTimePickerFormat.Custom;
+            AnioFabrica.CustomFormat = "MM-dd-yyyy";
+            Fechacrea.Format = DateTimePickerFormat.Custom;
+            Fechacrea.CustomFormat = "MM-dd-yyyy";
+        }
+
+        private void tabPagregar_Click(object sender, EventArgs e)
+        {
+           
+           
+        }
     }
 }

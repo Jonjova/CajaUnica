@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAutobuses));
             this.tabPconsultar = new System.Windows.Forms.TabPage();
             this.btnVerTodos = new System.Windows.Forms.Button();
@@ -61,6 +61,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPagregar = new System.Windows.Forms.TabPage();
+            this.lblIdval = new System.Windows.Forms.Label();
             this.txtNumAsientos = new System.Windows.Forms.NumericUpDown();
             this.dtpAnioFabrica = new System.Windows.Forms.DateTimePicker();
             this.dtpFechacrea = new System.Windows.Forms.DateTimePicker();
@@ -82,7 +83,6 @@
             this.lbldAutubus = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.lblIdval = new System.Windows.Forms.Label();
             this.tabPconsultar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MostrarAutobuses)).BeginInit();
             this.tabPactualizarEliminar.SuspendLayout();
@@ -167,34 +167,34 @@
             this.MostrarAutobuses.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.MostrarAutobuses.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.MostrarAutobuses.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.MostrarAutobuses.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.MostrarAutobuses.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.MostrarAutobuses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.AliceBlue;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.Desktop;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.MostrarAutobuses.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.AliceBlue;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.Desktop;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.MostrarAutobuses.DefaultCellStyle = dataGridViewCellStyle2;
             this.MostrarAutobuses.EnableHeadersVisualStyles = false;
             this.MostrarAutobuses.Location = new System.Drawing.Point(3, 51);
             this.MostrarAutobuses.Name = "MostrarAutobuses";
             this.MostrarAutobuses.RowHeadersVisible = false;
             this.MostrarAutobuses.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
-            this.MostrarAutobuses.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.MostrarAutobuses.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.MostrarAutobuses.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.MostrarAutobuses.Size = new System.Drawing.Size(918, 668);
             this.MostrarAutobuses.TabIndex = 0;
@@ -459,6 +459,16 @@
             this.tabPagregar.UseVisualStyleBackColor = true;
             this.tabPagregar.Click += new System.EventHandler(this.tabPagregar_Click);
             // 
+            // lblIdval
+            // 
+            this.lblIdval.AutoSize = true;
+            this.lblIdval.ForeColor = System.Drawing.Color.Maroon;
+            this.lblIdval.Location = new System.Drawing.Point(712, 66);
+            this.lblIdval.Name = "lblIdval";
+            this.lblIdval.Size = new System.Drawing.Size(0, 20);
+            this.lblIdval.TabIndex = 22;
+            this.lblIdval.Visible = false;
+            // 
             // txtNumAsientos
             // 
             this.txtNumAsientos.Location = new System.Drawing.Point(375, 186);
@@ -658,16 +668,6 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(932, 748);
             this.tabControl1.TabIndex = 0;
-            // 
-            // lblIdval
-            // 
-            this.lblIdval.AutoSize = true;
-            this.lblIdval.ForeColor = System.Drawing.Color.Maroon;
-            this.lblIdval.Location = new System.Drawing.Point(712, 66);
-            this.lblIdval.Name = "lblIdval";
-            this.lblIdval.Size = new System.Drawing.Size(0, 20);
-            this.lblIdval.TabIndex = 22;
-            this.lblIdval.Visible = false;
             // 
             // FormAutobuses
             // 

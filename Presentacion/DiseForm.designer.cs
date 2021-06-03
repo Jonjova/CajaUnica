@@ -44,10 +44,7 @@
             this.SidebarWrapper = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.cerrarSesion = new System.Windows.Forms.Button();
-            this.PanelUsuario = new System.Windows.Forms.Panel();
-            this.EliminarCuenta = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUsuario = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.ConfigurarPerfil = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnReportes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLugares = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAutobuses = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -72,7 +69,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.MenuSidebar)).BeginInit();
             this.SidebarWrapper.SuspendLayout();
             this.Sidebar.SuspendLayout();
-            this.PanelUsuario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -222,8 +218,8 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
             this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.Controls.Add(this.btnUsuario);
             this.Sidebar.Controls.Add(this.cerrarSesion);
-            this.Sidebar.Controls.Add(this.PanelUsuario);
             this.Sidebar.Controls.Add(this.btnReportes);
             this.Sidebar.Controls.Add(this.btnLugares);
             this.Sidebar.Controls.Add(this.btnAutobuses);
@@ -263,62 +259,13 @@
             this.cerrarSesion.UseVisualStyleBackColor = true;
             this.cerrarSesion.Click += new System.EventHandler(this.cerrarSesion_Click);
             // 
-            // PanelUsuario
-            // 
-            this.PanelUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.PanelUsuario.Controls.Add(this.EliminarCuenta);
-            this.PanelUsuario.Controls.Add(this.btnUsuario);
-            this.PanelUsuario.Controls.Add(this.ConfigurarPerfil);
-            this.AnimaacionSidebarBack.SetDecoration(this.PanelUsuario, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.PanelUsuario, BunifuAnimatorNS.DecorationType.None);
-            this.PanelUsuario.Location = new System.Drawing.Point(13, 581);
-            this.PanelUsuario.Name = "PanelUsuario";
-            this.PanelUsuario.Size = new System.Drawing.Size(221, 51);
-            this.PanelUsuario.TabIndex = 2;
-            // 
-            // EliminarCuenta
-            // 
-            this.EliminarCuenta.Activecolor = System.Drawing.Color.Transparent;
-            this.EliminarCuenta.BackColor = System.Drawing.Color.Transparent;
-            this.EliminarCuenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.EliminarCuenta.BorderRadius = 0;
-            this.EliminarCuenta.ButtonText = "        Eliminar Cuenta";
-            this.EliminarCuenta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimaacionSidebarBack.SetDecoration(this.EliminarCuenta, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.EliminarCuenta, BunifuAnimatorNS.DecorationType.None);
-            this.EliminarCuenta.DisabledColor = System.Drawing.Color.Gray;
-            this.EliminarCuenta.Iconcolor = System.Drawing.Color.Transparent;
-            this.EliminarCuenta.Iconimage = ((System.Drawing.Image)(resources.GetObject("EliminarCuenta.Iconimage")));
-            this.EliminarCuenta.Iconimage_right = null;
-            this.EliminarCuenta.Iconimage_right_Selected = null;
-            this.EliminarCuenta.Iconimage_Selected = null;
-            this.EliminarCuenta.IconMarginLeft = 0;
-            this.EliminarCuenta.IconMarginRight = 0;
-            this.EliminarCuenta.IconRightVisible = true;
-            this.EliminarCuenta.IconRightZoom = 0D;
-            this.EliminarCuenta.IconVisible = true;
-            this.EliminarCuenta.IconZoom = 45D;
-            this.EliminarCuenta.IsTab = false;
-            this.EliminarCuenta.Location = new System.Drawing.Point(8, 111);
-            this.EliminarCuenta.Name = "EliminarCuenta";
-            this.EliminarCuenta.Normalcolor = System.Drawing.Color.Transparent;
-            this.EliminarCuenta.OnHovercolor = System.Drawing.Color.Transparent;
-            this.EliminarCuenta.OnHoverTextColor = System.Drawing.Color.White;
-            this.EliminarCuenta.selected = false;
-            this.EliminarCuenta.Size = new System.Drawing.Size(210, 51);
-            this.EliminarCuenta.TabIndex = 4;
-            this.EliminarCuenta.Text = "        Eliminar Cuenta";
-            this.EliminarCuenta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarCuenta.Textcolor = System.Drawing.Color.White;
-            this.EliminarCuenta.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
             // btnUsuario
             // 
             this.btnUsuario.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnUsuario.BackColor = System.Drawing.Color.Transparent;
             this.btnUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnUsuario.BorderRadius = 7;
-            this.btnUsuario.ButtonText = "        Usuario";
+            this.btnUsuario.ButtonText = "        Usuarios";
             this.btnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AnimaacionSidebarBack.SetDecoration(this.btnUsuario, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.btnUsuario, BunifuAnimatorNS.DecorationType.None);
@@ -335,7 +282,7 @@
             this.btnUsuario.IconVisible = true;
             this.btnUsuario.IconZoom = 50D;
             this.btnUsuario.IsTab = false;
-            this.btnUsuario.Location = new System.Drawing.Point(8, 3);
+            this.btnUsuario.Location = new System.Drawing.Point(13, 584);
             this.btnUsuario.Name = "btnUsuario";
             this.btnUsuario.Normalcolor = System.Drawing.Color.Transparent;
             this.btnUsuario.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -343,47 +290,11 @@
             this.btnUsuario.selected = false;
             this.btnUsuario.Size = new System.Drawing.Size(207, 45);
             this.btnUsuario.TabIndex = 0;
-            this.btnUsuario.Text = "        Usuario";
+            this.btnUsuario.Text = "        Usuarios";
             this.btnUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsuario.Textcolor = System.Drawing.Color.White;
             this.btnUsuario.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuario.Click += new System.EventHandler(this.Usuario_Click);
-            // 
-            // ConfigurarPerfil
-            // 
-            this.ConfigurarPerfil.Activecolor = System.Drawing.Color.Transparent;
-            this.ConfigurarPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.ConfigurarPerfil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ConfigurarPerfil.BorderRadius = 0;
-            this.ConfigurarPerfil.ButtonText = "        Configurar Perfil";
-            this.ConfigurarPerfil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimaacionSidebarBack.SetDecoration(this.ConfigurarPerfil, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.ConfigurarPerfil, BunifuAnimatorNS.DecorationType.None);
-            this.ConfigurarPerfil.DisabledColor = System.Drawing.Color.Gray;
-            this.ConfigurarPerfil.Iconcolor = System.Drawing.Color.Transparent;
-            this.ConfigurarPerfil.Iconimage = ((System.Drawing.Image)(resources.GetObject("ConfigurarPerfil.Iconimage")));
-            this.ConfigurarPerfil.Iconimage_right = null;
-            this.ConfigurarPerfil.Iconimage_right_Selected = null;
-            this.ConfigurarPerfil.Iconimage_Selected = null;
-            this.ConfigurarPerfil.IconMarginLeft = 0;
-            this.ConfigurarPerfil.IconMarginRight = 0;
-            this.ConfigurarPerfil.IconRightVisible = true;
-            this.ConfigurarPerfil.IconRightZoom = 0D;
-            this.ConfigurarPerfil.IconVisible = true;
-            this.ConfigurarPerfil.IconZoom = 45D;
-            this.ConfigurarPerfil.IsTab = false;
-            this.ConfigurarPerfil.Location = new System.Drawing.Point(8, 54);
-            this.ConfigurarPerfil.Name = "ConfigurarPerfil";
-            this.ConfigurarPerfil.Normalcolor = System.Drawing.Color.Transparent;
-            this.ConfigurarPerfil.OnHovercolor = System.Drawing.Color.Transparent;
-            this.ConfigurarPerfil.OnHoverTextColor = System.Drawing.Color.White;
-            this.ConfigurarPerfil.selected = false;
-            this.ConfigurarPerfil.Size = new System.Drawing.Size(210, 51);
-            this.ConfigurarPerfil.TabIndex = 3;
-            this.ConfigurarPerfil.Text = "        Configurar Perfil";
-            this.ConfigurarPerfil.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ConfigurarPerfil.Textcolor = System.Drawing.Color.White;
-            this.ConfigurarPerfil.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnReportes
             // 
@@ -748,7 +659,6 @@
             // ColapzarUsuario
             // 
             this.ColapzarUsuario.Interval = 10;
-            this.ColapzarUsuario.Tick += new System.EventHandler(this.ColapzarUsuario_Tick);
             // 
             // DiseForm
             // 
@@ -774,7 +684,6 @@
             this.SidebarWrapper.ResumeLayout(false);
             this.Sidebar.ResumeLayout(false);
             this.Sidebar.PerformLayout();
-            this.PanelUsuario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -805,11 +714,8 @@
         private BunifuAnimatorNS.BunifuTransition AnimacionSidebar;
         private BunifuAnimatorNS.BunifuTransition AnimaacionSidebarBack;
         private Bunifu.Framework.UI.BunifuDragControl MoverDhasboard;
-        private Bunifu.Framework.UI.BunifuFlatButton EliminarCuenta;
-        private Bunifu.Framework.UI.BunifuFlatButton ConfigurarPerfil;
         private Bunifu.Framework.UI.BunifuFlatButton btnUsuario;
         private System.Windows.Forms.Timer ColapzarUsuario;
-        private System.Windows.Forms.Panel PanelUsuario;
         private Bunifu.Framework.UI.BunifuFlatButton btnReportes;
         private System.Windows.Forms.Label lblCargo;
         private System.Windows.Forms.Label lblNombre;

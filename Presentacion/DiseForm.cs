@@ -105,33 +105,11 @@ namespace Presentacion
             }
         }
 
-        private void ColapzarUsuario_Tick(object sender, EventArgs e)
-        {
-            if (EsColapzado)
-            {
-               
-                PanelUsuario.Height += 10;
-                if (PanelUsuario.Size == PanelUsuario.MaximumSize)
-                {
-                    ColapzarUsuario.Stop();
-                    EsColapzado = false;
-                }
-            }
-            else
-            {
-               
-                PanelUsuario.Height-=10;
-                if (PanelUsuario.Size == PanelUsuario.MinimumSize)
-                {
-                    ColapzarUsuario.Stop();
-                    EsColapzado = true;
-                }
-            }
-        }
+       
 
         private void Usuario_Click(object sender, EventArgs e)
         {
-            ColapzarUsuario.Start();
+            AbrirFormEnPanel(new Usuarios());
         }
 
         public void CargarDataUsuario()

@@ -37,3 +37,4 @@ C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Presentacion\obj\Debug\Presentacion.Pr
 C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Presentacion\obj\Debug\Presentacion.Empresarios.resources
 C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Empresarios.resources
+C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Usuarios.resources

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using Common.cache;
+
 namespace AccesoDatos
 {
     public class UsuarioDAO : ConexionSQL
@@ -18,7 +19,7 @@ namespace AccesoDatos
                 using (var command = new SqlCommand())
                 {
                     command.Connection = conex;
-                    command.CommandText = "select * from TBL_USUARIOS where NOMBRE_USUARIO=@nombreUsuario and CONTRASENA=@contrasena";
+                    command.CommandText = "SELECT * FROM VW_USUARIOS WHERE NOMBRE_USUARIO=@nombreUsuario and CONTRASENA=@contrasena";
                     command.Parameters.AddWithValue("@nombreUsuario", usuario);
                     command.Parameters.AddWithValue("@contrasena", contra);
                     command.CommandType = CommandType.Text;
@@ -27,10 +28,10 @@ namespace AccesoDatos
                     {
                         while (reader.Read())
                         {
-                            LoginUsuarioCache.ID_USUARIO = reader.GetInt32(0);                       
-                            LoginUsuarioCache.NOMBRE_USUARIO = reader.GetString(2);
-                            LoginUsuarioCache.ID_CARGO = reader.GetInt32(3);
-                            LoginUsuarioCache.ID_ROL = reader.GetInt32(4);
+                            LoginUsuarioCache.ID_USUARIO = reader.GetInt32(0);
+                            LoginUsuarioCache.NOMBRE_USUARIO = reader.GetString(1);
+                            LoginUsuarioCache.NOMBRE_CONTROL = reader.GetString(3);
+                            LoginUsuarioCache.NOMBRE_ROL = reader.GetString(4);
                             LoginUsuarioCache.FECHA_CREA = reader.GetDateTime(5);
                         }
                         return true;
@@ -42,14 +43,15 @@ namespace AccesoDatos
                 }
             }
         }
-        public void AnyMethod() {
+        public void AnyMethod()
+        {
             if (LoginUsuarioCache.ID_ROL == Cargos.Administrador)
             {
                 //hola
             }
-            if (LoginUsuarioCache.ID_ROL ==Cargos.Digitador)
+            if (LoginUsuarioCache.ID_ROL == Cargos.Digitador)
             {
-                
+
             }
         }
     }

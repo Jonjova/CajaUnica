@@ -9,11 +9,19 @@ namespace Common.cache
     public static class LoginUsuarioCache
     {
         public static int ID_USUARIO { get; set; }
-        public static string CONTRASENA { get; set; }
+
         public static string NOMBRE_USUARIO { get; set; }
+
+        public static string CONTRASENA { get; set; }
+
+        public static string NOMBRE_CONTROL { get; set; }
+
         public static string APELLIDO_USUARIO { get; set; }
-        public static int ID_CARGO { get; set; }
+
         public static int ID_ROL { get; set; }
+
+        public static string NOMBRE_ROL { get; set; }
+
         public static DateTime FECHA_CREA { get; set; }
     }
 }

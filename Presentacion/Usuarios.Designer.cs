@@ -44,25 +44,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblIdUsuario = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.idUsuario = new System.Windows.Forms.TextBox();
-            this.nombreUsuario = new System.Windows.Forms.TextBox();
-            this.contrasena = new System.Windows.Forms.TextBox();
-            this.idControl = new System.Windows.Forms.ComboBox();
-            this.idRol = new System.Windows.Forms.ComboBox();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnObtener = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.IdUser = new System.Windows.Forms.Label();
-            this.txtIDUser = new System.Windows.Forms.TextBox();
-            this.btnConsultar = new System.Windows.Forms.Button();
-            this.btnVerTodos = new System.Windows.Forms.Button();
+            this.btnObtener = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.idRol = new System.Windows.Forms.ComboBox();
+            this.idControl = new System.Windows.Forms.ComboBox();
+            this.contrasena = new System.Windows.Forms.TextBox();
+            this.nombreUsuario = new System.Windows.Forms.TextBox();
+            this.idUsuario = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.MostrarUsuarios = new System.Windows.Forms.DataGridView();
+            this.btnVerTodos = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
+            this.txtIDUser = new System.Windows.Forms.TextBox();
+            this.IdUser = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -234,125 +234,18 @@
             this.tabPage2.Text = "Actulaizar/Eliminar";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // btnEliminar
             // 
-            this.tabPage3.Controls.Add(this.MostrarUsuarios);
-            this.tabPage3.Controls.Add(this.btnVerTodos);
-            this.tabPage3.Controls.Add(this.btnConsultar);
-            this.tabPage3.Controls.Add(this.txtIDUser);
-            this.tabPage3.Controls.Add(this.IdUser);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(758, 460);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Mostrar";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(81, 47);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 16);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Id Usuario:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(81, 155);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 16);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Nombre Usuario:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(81, 224);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 16);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Contraseña:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(81, 293);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 16);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Id Control";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(81, 361);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 16);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Id Rol";
-            // 
-            // idUsuario
-            // 
-            this.idUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idUsuario.Location = new System.Drawing.Point(231, 37);
-            this.idUsuario.Name = "idUsuario";
-            this.idUsuario.Size = new System.Drawing.Size(280, 26);
-            this.idUsuario.TabIndex = 8;
-            // 
-            // nombreUsuario
-            // 
-            this.nombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreUsuario.Location = new System.Drawing.Point(231, 145);
-            this.nombreUsuario.Name = "nombreUsuario";
-            this.nombreUsuario.Size = new System.Drawing.Size(280, 26);
-            this.nombreUsuario.TabIndex = 9;
-            // 
-            // contrasena
-            // 
-            this.contrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contrasena.Location = new System.Drawing.Point(231, 214);
-            this.contrasena.Name = "contrasena";
-            this.contrasena.Size = new System.Drawing.Size(280, 26);
-            this.contrasena.TabIndex = 10;
-            // 
-            // idControl
-            // 
-            this.idControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idControl.FormattingEnabled = true;
-            this.idControl.Location = new System.Drawing.Point(231, 281);
-            this.idControl.Name = "idControl";
-            this.idControl.Size = new System.Drawing.Size(280, 28);
-            this.idControl.TabIndex = 11;
-            // 
-            // idRol
-            // 
-            this.idRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idRol.FormattingEnabled = true;
-            this.idRol.Location = new System.Drawing.Point(231, 349);
-            this.idRol.Name = "idRol";
-            this.idRol.Size = new System.Drawing.Size(280, 28);
-            this.idRol.TabIndex = 12;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnActualizar.Location = new System.Drawing.Point(231, 411);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(86, 34);
-            this.btnActualizar.TabIndex = 13;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = false;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.btnEliminar.BackColor = System.Drawing.Color.Brown;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.Snow;
+            this.btnEliminar.Location = new System.Drawing.Point(436, 411);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 31);
+            this.btnEliminar.TabIndex = 43;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // btnObtener
             // 
@@ -368,64 +261,125 @@
             this.btnObtener.UseVisualStyleBackColor = false;
             this.btnObtener.Click += new System.EventHandler(this.btnObtener_Click);
             // 
-            // btnEliminar
+            // btnActualizar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.Brown;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.ForeColor = System.Drawing.Color.Snow;
-            this.btnEliminar.Location = new System.Drawing.Point(436, 411);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 31);
-            this.btnEliminar.TabIndex = 43;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnActualizar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnActualizar.Location = new System.Drawing.Point(231, 411);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(86, 34);
+            this.btnActualizar.TabIndex = 13;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
-            // IdUser
+            // idRol
             // 
-            this.IdUser.AutoSize = true;
-            this.IdUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.IdUser.Location = new System.Drawing.Point(14, 33);
-            this.IdUser.Name = "IdUser";
-            this.IdUser.Size = new System.Drawing.Size(93, 20);
-            this.IdUser.TabIndex = 2;
-            this.IdUser.Text = "ID Usuarios";
+            this.idRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idRol.FormattingEnabled = true;
+            this.idRol.Location = new System.Drawing.Point(231, 349);
+            this.idRol.Name = "idRol";
+            this.idRol.Size = new System.Drawing.Size(280, 28);
+            this.idRol.TabIndex = 12;
             // 
-            // txtIDUser
+            // idControl
             // 
-            this.txtIDUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIDUser.Location = new System.Drawing.Point(135, 27);
-            this.txtIDUser.Name = "txtIDUser";
-            this.txtIDUser.Size = new System.Drawing.Size(354, 26);
-            this.txtIDUser.TabIndex = 3;
+            this.idControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idControl.FormattingEnabled = true;
+            this.idControl.Location = new System.Drawing.Point(231, 281);
+            this.idControl.Name = "idControl";
+            this.idControl.Size = new System.Drawing.Size(280, 28);
+            this.idControl.TabIndex = 11;
             // 
-            // btnConsultar
+            // contrasena
             // 
-            this.btnConsultar.BackColor = System.Drawing.Color.SlateGray;
-            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsultar.ForeColor = System.Drawing.Color.Snow;
-            this.btnConsultar.Location = new System.Drawing.Point(512, 24);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(99, 29);
-            this.btnConsultar.TabIndex = 4;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = false;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            this.contrasena.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contrasena.Location = new System.Drawing.Point(231, 214);
+            this.contrasena.Name = "contrasena";
+            this.contrasena.Size = new System.Drawing.Size(280, 26);
+            this.contrasena.TabIndex = 10;
             // 
-            // btnVerTodos
+            // nombreUsuario
             // 
-            this.btnVerTodos.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnVerTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerTodos.ForeColor = System.Drawing.Color.Snow;
-            this.btnVerTodos.Location = new System.Drawing.Point(626, 24);
-            this.btnVerTodos.Name = "btnVerTodos";
-            this.btnVerTodos.Size = new System.Drawing.Size(97, 29);
-            this.btnVerTodos.TabIndex = 5;
-            this.btnVerTodos.Text = "Ver Todos";
-            this.btnVerTodos.UseVisualStyleBackColor = false;
-            this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
+            this.nombreUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreUsuario.Location = new System.Drawing.Point(231, 145);
+            this.nombreUsuario.Name = "nombreUsuario";
+            this.nombreUsuario.Size = new System.Drawing.Size(280, 26);
+            this.nombreUsuario.TabIndex = 9;
+            // 
+            // idUsuario
+            // 
+            this.idUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idUsuario.Location = new System.Drawing.Point(231, 37);
+            this.idUsuario.Name = "idUsuario";
+            this.idUsuario.Size = new System.Drawing.Size(280, 26);
+            this.idUsuario.TabIndex = 8;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(81, 361);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(49, 16);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Id Rol";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(81, 293);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 16);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "Id Control";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(81, 224);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 16);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Contraseña:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(81, 155);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(125, 16);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Nombre Usuario:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(81, 47);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(83, 16);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Id Usuario:";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.MostrarUsuarios);
+            this.tabPage3.Controls.Add(this.btnVerTodos);
+            this.tabPage3.Controls.Add(this.btnConsultar);
+            this.tabPage3.Controls.Add(this.txtIDUser);
+            this.tabPage3.Controls.Add(this.IdUser);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(758, 460);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Mostrar";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // MostrarUsuarios
             // 
@@ -463,6 +417,52 @@
             this.MostrarUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.MostrarUsuarios.Size = new System.Drawing.Size(752, 389);
             this.MostrarUsuarios.TabIndex = 0;
+            // 
+            // btnVerTodos
+            // 
+            this.btnVerTodos.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnVerTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerTodos.ForeColor = System.Drawing.Color.Snow;
+            this.btnVerTodos.Location = new System.Drawing.Point(626, 24);
+            this.btnVerTodos.Name = "btnVerTodos";
+            this.btnVerTodos.Size = new System.Drawing.Size(97, 29);
+            this.btnVerTodos.TabIndex = 5;
+            this.btnVerTodos.Text = "Ver Todos";
+            this.btnVerTodos.UseVisualStyleBackColor = false;
+            this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.BackColor = System.Drawing.Color.SlateGray;
+            this.btnConsultar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsultar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsultar.ForeColor = System.Drawing.Color.Snow;
+            this.btnConsultar.Location = new System.Drawing.Point(512, 24);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(99, 29);
+            this.btnConsultar.TabIndex = 4;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = false;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
+            // txtIDUser
+            // 
+            this.txtIDUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDUser.Location = new System.Drawing.Point(135, 27);
+            this.txtIDUser.Name = "txtIDUser";
+            this.txtIDUser.Size = new System.Drawing.Size(354, 26);
+            this.txtIDUser.TabIndex = 3;
+            // 
+            // IdUser
+            // 
+            this.IdUser.AutoSize = true;
+            this.IdUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IdUser.Location = new System.Drawing.Point(14, 33);
+            this.IdUser.Name = "IdUser";
+            this.IdUser.Size = new System.Drawing.Size(93, 20);
+            this.IdUser.TabIndex = 2;
+            this.IdUser.Text = "ID Usuarios";
             // 
             // Usuarios
             // 

@@ -72,6 +72,12 @@
     <Compile Include="FormAutobuses.Designer.cs">
       <DependentUpon>FormAutobuses.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDetalleViajes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetalleViajes.Designer.cs">
+      <DependentUpon>FormDetalleViajes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAutobuses.resx">
       <DependentUpon>FormAutobuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetalleViajes.resx">
+      <DependentUpon>FormDetalleViajes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -33,8 +33,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiseForm));
             BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.ManuTop = new System.Windows.Forms.Panel();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblCargo = new System.Windows.Forms.Label();
             this.Restaurar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.maximizar = new System.Windows.Forms.PictureBox();
@@ -43,8 +41,8 @@
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.cerrarSesion = new System.Windows.Forms.Button();
             this.btnUsuario = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.cerrarSesion = new System.Windows.Forms.Button();
             this.btnReportes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLugares = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAutobuses = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -61,6 +59,10 @@
             this.AnimaacionSidebarBack = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.MoverDhasboard = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.ColapzarUsuario = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCargo = new System.Windows.Forms.Label();
             this.ManuTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
@@ -75,6 +77,8 @@
             // ManuTop
             // 
             this.ManuTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(46)))));
+            this.ManuTop.Controls.Add(this.label1);
+            this.ManuTop.Controls.Add(this.label2);
             this.ManuTop.Controls.Add(this.lblNombre);
             this.ManuTop.Controls.Add(this.lblCargo);
             this.ManuTop.Controls.Add(this.Restaurar);
@@ -90,32 +94,6 @@
             this.ManuTop.Name = "ManuTop";
             this.ManuTop.Size = new System.Drawing.Size(1200, 78);
             this.ManuTop.TabIndex = 0;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.AnimacionSidebar.SetDecoration(this.lblNombre, BunifuAnimatorNS.DecorationType.None);
-            this.AnimaacionSidebarBack.SetDecoration(this.lblNombre, BunifuAnimatorNS.DecorationType.None);
-            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(258, 21);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(61, 17);
-            this.lblNombre.TabIndex = 17;
-            this.lblNombre.Text = "Nombre";
-            // 
-            // lblCargo
-            // 
-            this.lblCargo.AutoSize = true;
-            this.AnimacionSidebar.SetDecoration(this.lblCargo, BunifuAnimatorNS.DecorationType.None);
-            this.AnimaacionSidebarBack.SetDecoration(this.lblCargo, BunifuAnimatorNS.DecorationType.None);
-            this.lblCargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.ForeColor = System.Drawing.Color.White;
-            this.lblCargo.Location = new System.Drawing.Point(258, 47);
-            this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(50, 17);
-            this.lblCargo.TabIndex = 15;
-            this.lblCargo.Text = "Cargo";
             // 
             // Restaurar
             // 
@@ -242,23 +220,6 @@
             this.Sidebar.Size = new System.Drawing.Size(240, 816);
             this.Sidebar.TabIndex = 0;
             // 
-            // cerrarSesion
-            // 
-            this.AnimacionSidebar.SetDecoration(this.cerrarSesion, BunifuAnimatorNS.DecorationType.None);
-            this.AnimaacionSidebarBack.SetDecoration(this.cerrarSesion, BunifuAnimatorNS.DecorationType.None);
-            this.cerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cerrarSesion.ForeColor = System.Drawing.Color.Transparent;
-            this.cerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("cerrarSesion.Image")));
-            this.cerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cerrarSesion.Location = new System.Drawing.Point(6, 660);
-            this.cerrarSesion.Name = "cerrarSesion";
-            this.cerrarSesion.Size = new System.Drawing.Size(231, 40);
-            this.cerrarSesion.TabIndex = 19;
-            this.cerrarSesion.Text = "Cerrar Sesion";
-            this.cerrarSesion.UseVisualStyleBackColor = true;
-            this.cerrarSesion.Click += new System.EventHandler(this.cerrarSesion_Click);
-            // 
             // btnUsuario
             // 
             this.btnUsuario.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -295,6 +256,23 @@
             this.btnUsuario.Textcolor = System.Drawing.Color.White;
             this.btnUsuario.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuario.Click += new System.EventHandler(this.Usuario_Click);
+            // 
+            // cerrarSesion
+            // 
+            this.AnimacionSidebar.SetDecoration(this.cerrarSesion, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.cerrarSesion, BunifuAnimatorNS.DecorationType.None);
+            this.cerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cerrarSesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cerrarSesion.ForeColor = System.Drawing.Color.Transparent;
+            this.cerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("cerrarSesion.Image")));
+            this.cerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cerrarSesion.Location = new System.Drawing.Point(6, 660);
+            this.cerrarSesion.Name = "cerrarSesion";
+            this.cerrarSesion.Size = new System.Drawing.Size(231, 40);
+            this.cerrarSesion.TabIndex = 19;
+            this.cerrarSesion.Text = "Cerrar Sesion";
+            this.cerrarSesion.UseVisualStyleBackColor = true;
+            this.cerrarSesion.Click += new System.EventHandler(this.cerrarSesion_Click);
             // 
             // btnReportes
             // 
@@ -513,6 +491,7 @@
             this.btnViajes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViajes.Textcolor = System.Drawing.Color.White;
             this.btnViajes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViajes.Click += new System.EventHandler(this.btnViajes_Click);
             // 
             // dashboard1
             // 
@@ -660,6 +639,58 @@
             // 
             this.ColapzarUsuario.Interval = 10;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(255, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Nombre:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(266, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 17);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Cargo:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.lblNombre, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.lblNombre, BunifuAnimatorNS.DecorationType.None);
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.White;
+            this.lblNombre.Location = new System.Drawing.Point(328, 18);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(61, 17);
+            this.lblNombre.TabIndex = 21;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // lblCargo
+            // 
+            this.lblCargo.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.lblCargo, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.lblCargo, BunifuAnimatorNS.DecorationType.None);
+            this.lblCargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargo.ForeColor = System.Drawing.Color.White;
+            this.lblCargo.Location = new System.Drawing.Point(328, 44);
+            this.lblCargo.Name = "lblCargo";
+            this.lblCargo.Size = new System.Drawing.Size(50, 17);
+            this.lblCargo.TabIndex = 20;
+            this.lblCargo.Text = "Cargo";
+            // 
             // DiseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -717,8 +748,10 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnUsuario;
         private System.Windows.Forms.Timer ColapzarUsuario;
         private Bunifu.Framework.UI.BunifuFlatButton btnReportes;
-        private System.Windows.Forms.Label lblCargo;
-        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Button cerrarSesion;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblCargo;
     }
 }

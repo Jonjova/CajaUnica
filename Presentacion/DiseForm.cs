@@ -114,8 +114,8 @@ namespace Presentacion
 
         public void CargarDataUsuario()
         {
-            lblNombre.Text = LoginUsuarioCache.NOMBRE_USUARIO ;
-            lblCargo.Text = LoginUsuarioCache.ID_ROL.ToString();
+            lblNombre.Text = LoginUsuarioCache.NOMBRE_CONTROL;
+            lblCargo.Text = LoginUsuarioCache.NOMBRE_ROL;
             // lblcorreo.Text = LoginUsuarioCache.;
 
         }
@@ -131,6 +131,11 @@ namespace Presentacion
         private void btnEmpresarios_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Empresarios());
+        }
+
+        private void btnViajes_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormDetalleViajes());
         }
     }
 }

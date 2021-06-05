@@ -7,3 +7,8 @@ C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Common\bin\Debug\Common.dll
 C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Common\bin\Debug\Common.pdb
 C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Common\obj\Debug\Common.dll
 C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Common\obj\Debug\Common.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\bin\Debug\Common.dll
+C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\bin\Debug\Common.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.dll
+C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.pdb

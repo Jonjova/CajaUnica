@@ -22,9 +22,10 @@ namespace AccesoDatos
         public readonly string conexString;
         public ConexionSQL()
         {
+
+            //esta cadena la podemos generar en el explorador de servidores
             //Data Source =.; Initial Catalog = USAM; Integrated Security = True
-            //esta cadena la podemos generar en el explorador de servidores 
-            conexString = "Data Source=BDCAJAUSAM.mssql.somee.com;Initial Catalog=BDCAJAUSAM;User ID=josuelopez200103_SQLLogin_1;Password=qnt76ppdyc;";
+            conexString = "Data Source=BDCAJAUSAM.mssql.somee.com;Initial Catalog=BDCAJAUSAM;User ID=Jonjova_SQLLogin_1;Password=ozau3ovkq2;";
         }
         
         protected SqlConnection obtenerConex()

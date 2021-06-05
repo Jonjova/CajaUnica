@@ -21,25 +21,29 @@ namespace Presentacion
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             CargarDataUsuario();
-            if (LoginUsuarioCache.ID_ROL == Cargos.Digitador)
+            if (LoginUsuarioCache.NOMBRE_ROL == "Digitador")
             {
                 btnViajes.Enabled = false;
                 btnMotoristas.Enabled = false;
                 btnEmpresarios.Enabled = false;
                 btnAutobuses.Enabled = false;
                 btnLugares.Enabled = false;
-            }
-            if (LoginUsuarioCache.ID_ROL == Cargos.Digitador)
-            {
                 btnReportes.Enabled = false;
             }
-            if (LoginUsuarioCache.ID_ROL == Cargos.Administrador)
+            if (LoginUsuarioCache.NOMBRE_ROL == "Administrador")
             {
-
+                
             }
             ColapzarUsuario.Start();
         }
 
+        // MINIMIZAR APLICACION
+        private void Minimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        // MAXIMIZAR VENTANA
         private void Restaurar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Normal;
@@ -47,11 +51,7 @@ namespace Presentacion
             maximizar.Visible = true;
         }
 
-        private void Minimizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
+        // MINIMIZAR VENTANA
         private void maximizar_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
@@ -59,32 +59,23 @@ namespace Presentacion
             Restaurar.Visible = true;
         }
 
+        // CERRAR APLICACION
         private void Cerrar_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Está seguro se cerrará la aplicación?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 Application.Exit();
             }
-          
         }
 
-        private void AbrirFormEnPanel(object Formhijo)
+        // CARGAR DATOS USUARIO
+        public void CargarDataUsuario()
         {
-            if (this.panelContenedor.Controls.Count > 0)
-                this.panelContenedor.Controls.RemoveAt(0);
-            Form fh = Formhijo as Form;
-            fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.panelContenedor.Controls.Add(fh);
-            this.panelContenedor.Tag = fh;
-            fh.Show();
+            lblNombre.Text = LoginUsuarioCache.NOMBRE_CONTROL;
+            lblCargo.Text = LoginUsuarioCache.NOMBRE_ROL;
         }
 
-        private void btnAutobuses_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new FormAutobuses());
-        }
-
+        // BOTON HAMBURGUESA
         private void MenuSidebar_Click(object sender, EventArgs e)
         {
             if (Sidebar.Width == 240)
@@ -105,21 +96,74 @@ namespace Presentacion
             }
         }
 
-       
+        // ABRIR FORMULARIOS EN PANEL
+        private void AbrirFormEnPanel(object Formhijo)
+        {
+            if (this.panelContenedor.Controls.Count > 0)
+                this.panelContenedor.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(fh);
+            this.panelContenedor.Tag = fh;
+            fh.Show();
+        }
 
+        // BOTON CONTROLES
+        private void btnControles_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // BOTON USUARIOS
         private void Usuario_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new Usuarios());
         }
 
-        public void CargarDataUsuario()
+        // BOTON LUGARES
+        private void btnLugares_Click(object sender, EventArgs e)
         {
-            lblNombre.Text = LoginUsuarioCache.NOMBRE_CONTROL;
-            lblCargo.Text = LoginUsuarioCache.NOMBRE_ROL;
-            // lblcorreo.Text = LoginUsuarioCache.;
 
         }
 
+        // BOTON EMPRESARIOS
+        private void btnEmpresarios_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new Empresarios());
+        }
+
+        // BOTON AUTOBUSES
+        private void btnAutobuses_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormAutobuses());
+        }
+
+        // BOTON MOTORISTAS
+        private void btnMotoristas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // BOTON VIAJES
+        private void btnViajes_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new FormDetalleViajes());
+        }
+
+        // BOTON EGRESOS
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // BOTON REPORTES
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        // BOTON CERRAR SESION
         private void cerrarSesion_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("¿está seguro se serrará esta sesión?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
@@ -128,14 +172,5 @@ namespace Presentacion
             }
         }
 
-        private void btnEmpresarios_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Empresarios());
-        }
-
-        private void btnViajes_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new FormDetalleViajes());
-        }
     }
 }

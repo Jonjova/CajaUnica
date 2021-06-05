@@ -29,10 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiseForm));
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation4 = new BunifuAnimatorNS.Animation();
             this.ManuTop = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCargo = new System.Windows.Forms.Label();
             this.Restaurar = new System.Windows.Forms.PictureBox();
             this.Minimizar = new System.Windows.Forms.PictureBox();
             this.maximizar = new System.Windows.Forms.PictureBox();
@@ -41,6 +45,8 @@
             this.MenuSidebar = new System.Windows.Forms.PictureBox();
             this.SidebarWrapper = new System.Windows.Forms.Panel();
             this.Sidebar = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnControles = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUsuario = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cerrarSesion = new System.Windows.Forms.Button();
             this.btnReportes = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -59,10 +65,6 @@
             this.AnimaacionSidebarBack = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.MoverDhasboard = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.ColapzarUsuario = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblCargo = new System.Windows.Forms.Label();
             this.ManuTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
@@ -94,6 +96,58 @@
             this.ManuTop.Name = "ManuTop";
             this.ManuTop.Size = new System.Drawing.Size(1200, 78);
             this.ManuTop.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(255, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Nombre:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(266, 44);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 17);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Cargo:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.lblNombre, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.lblNombre, BunifuAnimatorNS.DecorationType.None);
+            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.White;
+            this.lblNombre.Location = new System.Drawing.Point(328, 18);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(61, 17);
+            this.lblNombre.TabIndex = 21;
+            this.lblNombre.Text = "Nombre";
+            // 
+            // lblCargo
+            // 
+            this.lblCargo.AutoSize = true;
+            this.AnimacionSidebar.SetDecoration(this.lblCargo, BunifuAnimatorNS.DecorationType.None);
+            this.AnimaacionSidebarBack.SetDecoration(this.lblCargo, BunifuAnimatorNS.DecorationType.None);
+            this.lblCargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCargo.ForeColor = System.Drawing.Color.White;
+            this.lblCargo.Location = new System.Drawing.Point(328, 44);
+            this.lblCargo.Name = "lblCargo";
+            this.lblCargo.Size = new System.Drawing.Size(50, 17);
+            this.lblCargo.TabIndex = 20;
+            this.lblCargo.Text = "Cargo";
             // 
             // Restaurar
             // 
@@ -196,6 +250,8 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.Sidebar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Sidebar.BackgroundImage")));
             this.Sidebar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Sidebar.Controls.Add(this.bunifuFlatButton1);
+            this.Sidebar.Controls.Add(this.btnControles);
             this.Sidebar.Controls.Add(this.btnUsuario);
             this.Sidebar.Controls.Add(this.cerrarSesion);
             this.Sidebar.Controls.Add(this.btnReportes);
@@ -220,6 +276,80 @@
             this.Sidebar.Size = new System.Drawing.Size(240, 816);
             this.Sidebar.TabIndex = 0;
             // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton1.BorderRadius = 7;
+            this.bunifuFlatButton1.ButtonText = "        Egresos";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimaacionSidebarBack.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 50D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(25, 590);
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(190, 50);
+            this.bunifuFlatButton1.TabIndex = 21;
+            this.bunifuFlatButton1.Text = "        Egresos";
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            // 
+            // btnControles
+            // 
+            this.btnControles.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.btnControles.BackColor = System.Drawing.Color.Transparent;
+            this.btnControles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnControles.BorderRadius = 7;
+            this.btnControles.ButtonText = "        Controles";
+            this.btnControles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AnimaacionSidebarBack.SetDecoration(this.btnControles, BunifuAnimatorNS.DecorationType.None);
+            this.AnimacionSidebar.SetDecoration(this.btnControles, BunifuAnimatorNS.DecorationType.None);
+            this.btnControles.DisabledColor = System.Drawing.Color.Gray;
+            this.btnControles.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnControles.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnControles.Iconimage")));
+            this.btnControles.Iconimage_right = null;
+            this.btnControles.Iconimage_right_Selected = null;
+            this.btnControles.Iconimage_Selected = null;
+            this.btnControles.IconMarginLeft = 0;
+            this.btnControles.IconMarginRight = 0;
+            this.btnControles.IconRightVisible = true;
+            this.btnControles.IconRightZoom = 0D;
+            this.btnControles.IconVisible = true;
+            this.btnControles.IconZoom = 50D;
+            this.btnControles.IsTab = false;
+            this.btnControles.Location = new System.Drawing.Point(25, 135);
+            this.btnControles.Name = "btnControles";
+            this.btnControles.Normalcolor = System.Drawing.Color.Transparent;
+            this.btnControles.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.btnControles.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnControles.selected = false;
+            this.btnControles.Size = new System.Drawing.Size(190, 50);
+            this.btnControles.TabIndex = 20;
+            this.btnControles.Text = "        Controles";
+            this.btnControles.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnControles.Textcolor = System.Drawing.Color.White;
+            this.btnControles.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnControles.Click += new System.EventHandler(this.btnControles_Click);
+            // 
             // btnUsuario
             // 
             this.btnUsuario.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -243,13 +373,13 @@
             this.btnUsuario.IconVisible = true;
             this.btnUsuario.IconZoom = 50D;
             this.btnUsuario.IsTab = false;
-            this.btnUsuario.Location = new System.Drawing.Point(13, 584);
+            this.btnUsuario.Location = new System.Drawing.Point(25, 200);
             this.btnUsuario.Name = "btnUsuario";
             this.btnUsuario.Normalcolor = System.Drawing.Color.Transparent;
             this.btnUsuario.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnUsuario.OnHoverTextColor = System.Drawing.Color.White;
             this.btnUsuario.selected = false;
-            this.btnUsuario.Size = new System.Drawing.Size(207, 45);
+            this.btnUsuario.Size = new System.Drawing.Size(190, 50);
             this.btnUsuario.TabIndex = 0;
             this.btnUsuario.Text = "        Usuarios";
             this.btnUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -266,9 +396,9 @@
             this.cerrarSesion.ForeColor = System.Drawing.Color.Transparent;
             this.cerrarSesion.Image = ((System.Drawing.Image)(resources.GetObject("cerrarSesion.Image")));
             this.cerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cerrarSesion.Location = new System.Drawing.Point(6, 660);
+            this.cerrarSesion.Location = new System.Drawing.Point(15, 732);
             this.cerrarSesion.Name = "cerrarSesion";
-            this.cerrarSesion.Size = new System.Drawing.Size(231, 40);
+            this.cerrarSesion.Size = new System.Drawing.Size(210, 40);
             this.cerrarSesion.TabIndex = 19;
             this.cerrarSesion.Text = "Cerrar Sesion";
             this.cerrarSesion.UseVisualStyleBackColor = true;
@@ -297,18 +427,19 @@
             this.btnReportes.IconVisible = true;
             this.btnReportes.IconZoom = 50D;
             this.btnReportes.IsTab = false;
-            this.btnReportes.Location = new System.Drawing.Point(13, 514);
+            this.btnReportes.Location = new System.Drawing.Point(25, 655);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Normalcolor = System.Drawing.Color.Transparent;
             this.btnReportes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnReportes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnReportes.selected = false;
-            this.btnReportes.Size = new System.Drawing.Size(210, 42);
+            this.btnReportes.Size = new System.Drawing.Size(190, 50);
             this.btnReportes.TabIndex = 8;
             this.btnReportes.Text = "        Reportes";
             this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReportes.Textcolor = System.Drawing.Color.White;
             this.btnReportes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnLugares
             // 
@@ -333,18 +464,19 @@
             this.btnLugares.IconVisible = true;
             this.btnLugares.IconZoom = 50D;
             this.btnLugares.IsTab = false;
-            this.btnLugares.Location = new System.Drawing.Point(13, 435);
+            this.btnLugares.Location = new System.Drawing.Point(25, 265);
             this.btnLugares.Name = "btnLugares";
             this.btnLugares.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLugares.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnLugares.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLugares.selected = false;
-            this.btnLugares.Size = new System.Drawing.Size(210, 51);
+            this.btnLugares.Size = new System.Drawing.Size(190, 50);
             this.btnLugares.TabIndex = 7;
             this.btnLugares.Text = "        Lugares";
             this.btnLugares.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLugares.Textcolor = System.Drawing.Color.White;
             this.btnLugares.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLugares.Click += new System.EventHandler(this.btnLugares_Click);
             // 
             // btnAutobuses
             // 
@@ -369,13 +501,13 @@
             this.btnAutobuses.IconVisible = true;
             this.btnAutobuses.IconZoom = 50D;
             this.btnAutobuses.IsTab = false;
-            this.btnAutobuses.Location = new System.Drawing.Point(10, 365);
+            this.btnAutobuses.Location = new System.Drawing.Point(25, 395);
             this.btnAutobuses.Name = "btnAutobuses";
             this.btnAutobuses.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAutobuses.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnAutobuses.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAutobuses.selected = false;
-            this.btnAutobuses.Size = new System.Drawing.Size(213, 51);
+            this.btnAutobuses.Size = new System.Drawing.Size(190, 50);
             this.btnAutobuses.TabIndex = 6;
             this.btnAutobuses.Text = "        Autobuses";
             this.btnAutobuses.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -406,13 +538,13 @@
             this.btnEmpresarios.IconVisible = true;
             this.btnEmpresarios.IconZoom = 50D;
             this.btnEmpresarios.IsTab = false;
-            this.btnEmpresarios.Location = new System.Drawing.Point(13, 295);
+            this.btnEmpresarios.Location = new System.Drawing.Point(25, 330);
             this.btnEmpresarios.Name = "btnEmpresarios";
             this.btnEmpresarios.Normalcolor = System.Drawing.Color.Transparent;
             this.btnEmpresarios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEmpresarios.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEmpresarios.selected = false;
-            this.btnEmpresarios.Size = new System.Drawing.Size(210, 51);
+            this.btnEmpresarios.Size = new System.Drawing.Size(190, 50);
             this.btnEmpresarios.TabIndex = 5;
             this.btnEmpresarios.Text = "        Empresarios";
             this.btnEmpresarios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -443,18 +575,19 @@
             this.btnMotoristas.IconVisible = true;
             this.btnMotoristas.IconZoom = 50D;
             this.btnMotoristas.IsTab = false;
-            this.btnMotoristas.Location = new System.Drawing.Point(13, 225);
+            this.btnMotoristas.Location = new System.Drawing.Point(25, 460);
             this.btnMotoristas.Name = "btnMotoristas";
             this.btnMotoristas.Normalcolor = System.Drawing.Color.Transparent;
             this.btnMotoristas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnMotoristas.OnHoverTextColor = System.Drawing.Color.White;
             this.btnMotoristas.selected = false;
-            this.btnMotoristas.Size = new System.Drawing.Size(210, 51);
+            this.btnMotoristas.Size = new System.Drawing.Size(190, 50);
             this.btnMotoristas.TabIndex = 4;
             this.btnMotoristas.Text = "        Motoristas";
             this.btnMotoristas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMotoristas.Textcolor = System.Drawing.Color.White;
             this.btnMotoristas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMotoristas.Click += new System.EventHandler(this.btnMotoristas_Click);
             // 
             // btnViajes
             // 
@@ -479,13 +612,13 @@
             this.btnViajes.IconVisible = true;
             this.btnViajes.IconZoom = 50D;
             this.btnViajes.IsTab = false;
-            this.btnViajes.Location = new System.Drawing.Point(10, 155);
+            this.btnViajes.Location = new System.Drawing.Point(25, 525);
             this.btnViajes.Name = "btnViajes";
             this.btnViajes.Normalcolor = System.Drawing.Color.Transparent;
             this.btnViajes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnViajes.OnHoverTextColor = System.Drawing.Color.White;
             this.btnViajes.selected = false;
-            this.btnViajes.Size = new System.Drawing.Size(213, 51);
+            this.btnViajes.Size = new System.Drawing.Size(190, 50);
             this.btnViajes.TabIndex = 3;
             this.btnViajes.Text = "        Viajes";
             this.btnViajes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -516,13 +649,13 @@
             this.dashboard1.IconVisible = true;
             this.dashboard1.IconZoom = 50D;
             this.dashboard1.IsTab = false;
-            this.dashboard1.Location = new System.Drawing.Point(13, 85);
+            this.dashboard1.Location = new System.Drawing.Point(25, 70);
             this.dashboard1.Name = "dashboard1";
             this.dashboard1.Normalcolor = System.Drawing.Color.Transparent;
             this.dashboard1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.dashboard1.OnHoverTextColor = System.Drawing.Color.White;
             this.dashboard1.selected = false;
-            this.dashboard1.Size = new System.Drawing.Size(207, 51);
+            this.dashboard1.Size = new System.Drawing.Size(190, 50);
             this.dashboard1.TabIndex = 0;
             this.dashboard1.Text = "        Dashboard";
             this.dashboard1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -553,9 +686,9 @@
             this.Grupo6.ForeColor = System.Drawing.Color.White;
             this.Grupo6.Location = new System.Drawing.Point(66, 13);
             this.Grupo6.Name = "Grupo6";
-            this.Grupo6.Size = new System.Drawing.Size(73, 20);
+            this.Grupo6.Size = new System.Drawing.Size(94, 20);
             this.Grupo6.TabIndex = 2;
-            this.Grupo6.Text = "Grupo 6";
+            this.Grupo6.Text = "Caja Unica";
             // 
             // pictureBox1
             // 
@@ -590,43 +723,43 @@
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 1;
-            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 2F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 1;
+            animation3.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 2F;
+            animation3.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation3;
             // 
             // AnimaacionSidebarBack
             // 
             this.AnimaacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimaacionSidebarBack.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimaacionSidebarBack.DefaultAnimation = animation2;
+            animation4.AnimateOnlyDifferences = true;
+            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
+            animation4.LeafCoeff = 0F;
+            animation4.MaxTime = 1F;
+            animation4.MinTime = 0F;
+            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
+            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
+            animation4.MosaicSize = 0;
+            animation4.Padding = new System.Windows.Forms.Padding(0);
+            animation4.RotateCoeff = 0F;
+            animation4.RotateLimit = 0F;
+            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
+            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
+            animation4.TimeCoeff = 0F;
+            animation4.TransparencyCoeff = 0F;
+            this.AnimaacionSidebarBack.DefaultAnimation = animation4;
             // 
             // MoverDhasboard
             // 
@@ -638,58 +771,6 @@
             // ColapzarUsuario
             // 
             this.ColapzarUsuario.Interval = 10;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.AnimacionSidebar.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.AnimaacionSidebarBack.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(255, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Nombre:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.AnimacionSidebar.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.AnimaacionSidebarBack.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(266, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 17);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Cargo:";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.AutoSize = true;
-            this.AnimacionSidebar.SetDecoration(this.lblNombre, BunifuAnimatorNS.DecorationType.None);
-            this.AnimaacionSidebarBack.SetDecoration(this.lblNombre, BunifuAnimatorNS.DecorationType.None);
-            this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.ForeColor = System.Drawing.Color.White;
-            this.lblNombre.Location = new System.Drawing.Point(328, 18);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(61, 17);
-            this.lblNombre.TabIndex = 21;
-            this.lblNombre.Text = "Nombre";
-            // 
-            // lblCargo
-            // 
-            this.lblCargo.AutoSize = true;
-            this.AnimacionSidebar.SetDecoration(this.lblCargo, BunifuAnimatorNS.DecorationType.None);
-            this.AnimaacionSidebarBack.SetDecoration(this.lblCargo, BunifuAnimatorNS.DecorationType.None);
-            this.lblCargo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCargo.ForeColor = System.Drawing.Color.White;
-            this.lblCargo.Location = new System.Drawing.Point(328, 44);
-            this.lblCargo.Name = "lblCargo";
-            this.lblCargo.Size = new System.Drawing.Size(50, 17);
-            this.lblCargo.TabIndex = 20;
-            this.lblCargo.Text = "Cargo";
             // 
             // DiseForm
             // 
@@ -753,5 +834,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCargo;
+        private Bunifu.Framework.UI.BunifuFlatButton btnControles;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton1;
     }
 }

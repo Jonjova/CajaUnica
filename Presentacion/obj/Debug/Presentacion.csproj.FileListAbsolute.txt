@@ -59,3 +59,27 @@ C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Presentacion\obj\Debug\Pre
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Presentacion\obj\Debug\Presentacion.Usuarios.resources
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Presentacion\obj\Debug\Presentacion.FormDetalleViajes.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\AccesoDatos.dll
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Common.dll
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Dominio.dll
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\AccesoDatos.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Common.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Dominio.pdb
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.DiseForm.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Empresarios.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.FormAutobuses.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.FormDetalleViajes.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Principal.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+C:\Users\ADMIN\Desktop\CajaUnica\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\ADMIN\Desktop\CajaUnica\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\ADMIN\Desktop\CajaUnica\Presentacion\obj\Debug\Presentacion.pdb

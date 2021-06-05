@@ -21,7 +21,7 @@ namespace Presentacion
             InitializeComponent();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             CargarDataUsuario();
-            if (LoginUsuarioCache.NOMBRE_ROL == "Digitador")
+            if (LoginUsuarioCache.NOMBRE_ROL == "Digitador") // ACCESO DIGITADOR
             {
                 btnViajes.Enabled = false;
                 btnMotoristas.Enabled = false;
@@ -30,7 +30,7 @@ namespace Presentacion
                 btnLugares.Enabled = false;
                 btnReportes.Enabled = false;
             }
-            if (LoginUsuarioCache.NOMBRE_ROL == "Administrador")
+            if (LoginUsuarioCache.NOMBRE_ROL == "Administrador") // ACCESO ADMIN
             {
                 
             }

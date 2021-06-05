@@ -60,3 +60,6 @@ C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Presentacion\obj\Debug\Pre
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Presentacion\obj\Debug\Presentacion.FormDetalleViajes.resources
 C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.FormDetalleViajes.resources
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.pdb

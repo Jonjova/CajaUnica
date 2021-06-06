@@ -166,11 +166,10 @@ namespace Presentacion
         // BOTON CERRAR SESION
         private void cerrarSesion_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿está seguro se serrará esta sesión?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (MessageBox.Show("¿Está seguro? se cerrará esta sesión", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 this.Close();
             }
         }
-
     }
 }

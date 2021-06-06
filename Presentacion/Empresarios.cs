@@ -235,5 +235,10 @@ namespace Presentacion
             //id generado
             //objEmp.generarId(txtId);
         }
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

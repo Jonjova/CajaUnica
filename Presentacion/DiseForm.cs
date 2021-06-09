@@ -154,6 +154,7 @@ namespace Presentacion
         // BOTON EGRESOS
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
+            AbrirFormEnPanel(new Egresos());
 
         }
 

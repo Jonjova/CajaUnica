@@ -194,6 +194,12 @@ namespace Presentacion
         private void btnObtener_Click(object sender, EventArgs e)
         {
             AutobusesModelo ObjAutobuses = new AutobusesModelo();
+            if (string.IsNullOrEmpty(txtIDAutobus.Text ?? string.Empty))
+            {
+
+                MessageBox.Show("Ingrese el Id a consultar por favor");
+                return;
+            }
             try
             {
                 DataSet DatosAutobuses = ObjAutobuses.obtenerAutobuses(txtIDAutobus.Text);

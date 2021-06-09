@@ -133,6 +133,12 @@ namespace Presentacion
         private void btnObtener_Click(object sender, EventArgs e)
         {
             UsuarioModelo ObjUsuario = new UsuarioModelo();
+            if (string.IsNullOrEmpty(idUsuario.Text ?? string.Empty))
+            {
+
+                MessageBox.Show("Ingrese el Id a consultar por favor");
+                return;
+            }
             try
             {
                 DataSet DatosUsuario = ObjUsuario.obtenerUsuarios(idUsuario.Text);
@@ -194,6 +200,11 @@ namespace Presentacion
             {
                 MessageBox.Show("Fatality!: " + Ex.Message + " " + ObjUsuario.Mensaje);
             }
+        }
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

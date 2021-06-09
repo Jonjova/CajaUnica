@@ -109,5 +109,31 @@ namespace Presentacion
             }
         }
 
+        private void Minimizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
+        private void maximizar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            maximizar.Visible = false;
+            Restaurar.Visible = true;
+        }
+
+        private void Cerrar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Está seguro se cerrará la aplicación?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void Restaurar_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Normal;
+            Restaurar.Visible = false;
+            maximizar.Visible = true;
+        }
     }
 }

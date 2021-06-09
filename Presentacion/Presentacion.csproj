@@ -54,6 +54,12 @@
     <Compile Include="DiseForm.designer.cs">
       <DependentUpon>DiseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Egresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Egresos.Designer.cs">
+      <DependentUpon>Egresos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empresarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <EmbeddedResource Include="DiseForm.resx">
       <DependentUpon>DiseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Egresos.resx">
+      <DependentUpon>Egresos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empresarios.resx">
       <DependentUpon>Empresarios.cs</DependentUpon>

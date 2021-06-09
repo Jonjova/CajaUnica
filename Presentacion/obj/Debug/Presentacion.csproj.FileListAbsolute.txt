@@ -83,3 +83,4 @@ C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\
 C:\Users\ADMIN\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
 C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Presentacion\obj\Debug\Presentacion.FormDetalleViajes.resources
 C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Egresos.resources

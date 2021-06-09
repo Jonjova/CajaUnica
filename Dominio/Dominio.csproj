@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="AutobusesModelo.cs" />
     <Compile Include="DetalleViajesModelo.cs" />
+    <Compile Include="EgresosModelo.cs" />
     <Compile Include="EmpresarioModelo.cs" />
     <Compile Include="UsuarioModelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

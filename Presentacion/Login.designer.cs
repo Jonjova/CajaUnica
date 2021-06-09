@@ -37,8 +37,18 @@ namespace Presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.labelErrorMessage = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.Minimizar = new System.Windows.Forms.PictureBox();
+            this.Restaurar = new System.Windows.Forms.PictureBox();
+            this.Cerrar = new System.Windows.Forms.PictureBox();
+            this.maximizar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maximizar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -48,7 +58,7 @@ namespace Presentacion
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(298, 450);
+            this.panel1.Size = new System.Drawing.Size(294, 450);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -91,7 +101,7 @@ namespace Presentacion
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(496, 52);
+            this.label1.Location = new System.Drawing.Point(493, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 33);
             this.label1.TabIndex = 3;
@@ -122,23 +132,95 @@ namespace Presentacion
             this.labelErrorMessage.Text = "Mensaje de error";
             this.labelErrorMessage.Visible = false;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Restaurar);
+            this.panel2.Controls.Add(this.maximizar);
+            this.panel2.Controls.Add(this.Cerrar);
+            this.panel2.Controls.Add(this.Minimizar);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(294, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(506, 53);
+            this.panel2.TabIndex = 8;
+            // 
+            // Minimizar
+            // 
+            this.Minimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Minimizar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Minimizar.Image = ((System.Drawing.Image)(resources.GetObject("Minimizar.Image")));
+            this.Minimizar.Location = new System.Drawing.Point(392, 3);
+            this.Minimizar.Name = "Minimizar";
+            this.Minimizar.Size = new System.Drawing.Size(30, 30);
+            this.Minimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Minimizar.TabIndex = 5;
+            this.Minimizar.TabStop = false;
+            this.Minimizar.Click += new System.EventHandler(this.Minimizar_Click);
+            // 
+            // Restaurar
+            // 
+            this.Restaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Restaurar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Restaurar.Image = ((System.Drawing.Image)(resources.GetObject("Restaurar.Image")));
+            this.Restaurar.Location = new System.Drawing.Point(428, 3);
+            this.Restaurar.Name = "Restaurar";
+            this.Restaurar.Size = new System.Drawing.Size(30, 30);
+            this.Restaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Restaurar.TabIndex = 6;
+            this.Restaurar.TabStop = false;
+            this.Restaurar.Visible = false;
+            this.Restaurar.Click += new System.EventHandler(this.Restaurar_Click);
+            // 
+            // Cerrar
+            // 
+            this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Cerrar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Cerrar.Image = ((System.Drawing.Image)(resources.GetObject("Cerrar.Image")));
+            this.Cerrar.Location = new System.Drawing.Point(464, 3);
+            this.Cerrar.Name = "Cerrar";
+            this.Cerrar.Size = new System.Drawing.Size(30, 30);
+            this.Cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Cerrar.TabIndex = 7;
+            this.Cerrar.TabStop = false;
+            this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
+            // 
+            // maximizar
+            // 
+            this.maximizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maximizar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.maximizar.Image = ((System.Drawing.Image)(resources.GetObject("maximizar.Image")));
+            this.maximizar.Location = new System.Drawing.Point(428, 3);
+            this.maximizar.Name = "maximizar";
+            this.maximizar.Size = new System.Drawing.Size(30, 30);
+            this.maximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.maximizar.TabIndex = 9;
+            this.maximizar.TabStop = false;
+            this.maximizar.Click += new System.EventHandler(this.maximizar_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.labelErrorMessage);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Minimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Restaurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cerrar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maximizar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +235,11 @@ namespace Presentacion
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelErrorMessage;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox Minimizar;
+        private System.Windows.Forms.PictureBox Restaurar;
+        private System.Windows.Forms.PictureBox Cerrar;
+        private System.Windows.Forms.PictureBox maximizar;
     }
 }
 

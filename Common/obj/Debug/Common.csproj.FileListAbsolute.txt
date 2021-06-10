@@ -11,3 +11,4 @@ C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\bin\Debug\Common.pd
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.dll
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.pdb
+C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache

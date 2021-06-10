@@ -24,11 +24,11 @@ namespace Presentacion
             if (LoginUsuarioCache.NOMBRE_ROL == "Digitador") // ACCESO DIGITADOR
             {
                 btnViajes.Enabled = false;
-                btnMotoristas.Enabled = false;
+                btnUsuario.Enabled = false;
                 btnEmpresarios.Enabled = false;
                 btnAutobuses.Enabled = false;
                 btnLugares.Enabled = false;
-                btnReportes.Enabled = false;
+                bunifuFlatButton1.Enabled = false;
             }
             if (LoginUsuarioCache.NOMBRE_ROL == "Administrador") // ACCESO ADMIN
             {
@@ -124,7 +124,7 @@ namespace Presentacion
         // BOTON LUGARES
         private void btnLugares_Click(object sender, EventArgs e)
         {
-
+            AbrirFormEnPanel(new Lugares_Form());
         }
 
         // BOTON EMPRESARIOS

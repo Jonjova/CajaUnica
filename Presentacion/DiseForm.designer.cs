@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation9 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiseForm));
-            BunifuAnimatorNS.Animation animation10 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             this.ManuTop = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,11 +49,9 @@
             this.btnControles = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnUsuario = new Bunifu.Framework.UI.BunifuFlatButton();
             this.cerrarSesion = new System.Windows.Forms.Button();
-            this.btnReportes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLugares = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAutobuses = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEmpresarios = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnMotoristas = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnViajes = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dashboard1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.LineaSidebar = new Bunifu.Framework.UI.BunifuSeparator();
@@ -254,11 +252,9 @@
             this.Sidebar.Controls.Add(this.btnControles);
             this.Sidebar.Controls.Add(this.btnUsuario);
             this.Sidebar.Controls.Add(this.cerrarSesion);
-            this.Sidebar.Controls.Add(this.btnReportes);
             this.Sidebar.Controls.Add(this.btnLugares);
             this.Sidebar.Controls.Add(this.btnAutobuses);
             this.Sidebar.Controls.Add(this.btnEmpresarios);
-            this.Sidebar.Controls.Add(this.btnMotoristas);
             this.Sidebar.Controls.Add(this.btnViajes);
             this.Sidebar.Controls.Add(this.dashboard1);
             this.Sidebar.Controls.Add(this.LineaSidebar);
@@ -299,7 +295,7 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 50D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(25, 590);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(25, 539);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -404,43 +400,6 @@
             this.cerrarSesion.Text = "Cerrar Sesion";
             this.cerrarSesion.UseVisualStyleBackColor = true;
             this.cerrarSesion.Click += new System.EventHandler(this.cerrarSesion_Click);
-            // 
-            // btnReportes
-            // 
-            this.btnReportes.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.btnReportes.BackColor = System.Drawing.Color.Transparent;
-            this.btnReportes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnReportes.BorderRadius = 7;
-            this.btnReportes.ButtonText = "        Reportes";
-            this.btnReportes.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimaacionSidebarBack.SetDecoration(this.btnReportes, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.btnReportes, BunifuAnimatorNS.DecorationType.None);
-            this.btnReportes.DisabledColor = System.Drawing.Color.Gray;
-            this.btnReportes.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnReportes.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnReportes.Iconimage")));
-            this.btnReportes.Iconimage_right = null;
-            this.btnReportes.Iconimage_right_Selected = null;
-            this.btnReportes.Iconimage_Selected = null;
-            this.btnReportes.IconMarginLeft = 0;
-            this.btnReportes.IconMarginRight = 0;
-            this.btnReportes.IconRightVisible = true;
-            this.btnReportes.IconRightZoom = 0D;
-            this.btnReportes.IconVisible = true;
-            this.btnReportes.IconZoom = 50D;
-            this.btnReportes.IsTab = false;
-            this.btnReportes.Location = new System.Drawing.Point(25, 655);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnReportes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.btnReportes.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnReportes.selected = false;
-            this.btnReportes.Size = new System.Drawing.Size(190, 50);
-            this.btnReportes.TabIndex = 8;
-            this.btnReportes.Text = "        Reportes";
-            this.btnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportes.Textcolor = System.Drawing.Color.White;
-            this.btnReportes.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnLugares
             // 
@@ -553,43 +512,6 @@
             this.btnEmpresarios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpresarios.Click += new System.EventHandler(this.btnEmpresarios_Click);
             // 
-            // btnMotoristas
-            // 
-            this.btnMotoristas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.btnMotoristas.BackColor = System.Drawing.Color.Transparent;
-            this.btnMotoristas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMotoristas.BorderRadius = 7;
-            this.btnMotoristas.ButtonText = "        Motoristas";
-            this.btnMotoristas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AnimaacionSidebarBack.SetDecoration(this.btnMotoristas, BunifuAnimatorNS.DecorationType.None);
-            this.AnimacionSidebar.SetDecoration(this.btnMotoristas, BunifuAnimatorNS.DecorationType.None);
-            this.btnMotoristas.DisabledColor = System.Drawing.Color.Gray;
-            this.btnMotoristas.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnMotoristas.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnMotoristas.Iconimage")));
-            this.btnMotoristas.Iconimage_right = null;
-            this.btnMotoristas.Iconimage_right_Selected = null;
-            this.btnMotoristas.Iconimage_Selected = null;
-            this.btnMotoristas.IconMarginLeft = 0;
-            this.btnMotoristas.IconMarginRight = 0;
-            this.btnMotoristas.IconRightVisible = true;
-            this.btnMotoristas.IconRightZoom = 0D;
-            this.btnMotoristas.IconVisible = true;
-            this.btnMotoristas.IconZoom = 50D;
-            this.btnMotoristas.IsTab = false;
-            this.btnMotoristas.Location = new System.Drawing.Point(25, 460);
-            this.btnMotoristas.Name = "btnMotoristas";
-            this.btnMotoristas.Normalcolor = System.Drawing.Color.Transparent;
-            this.btnMotoristas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.btnMotoristas.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnMotoristas.selected = false;
-            this.btnMotoristas.Size = new System.Drawing.Size(190, 50);
-            this.btnMotoristas.TabIndex = 4;
-            this.btnMotoristas.Text = "        Motoristas";
-            this.btnMotoristas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMotoristas.Textcolor = System.Drawing.Color.White;
-            this.btnMotoristas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMotoristas.Click += new System.EventHandler(this.btnMotoristas_Click);
-            // 
             // btnViajes
             // 
             this.btnViajes.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -613,7 +535,7 @@
             this.btnViajes.IconVisible = true;
             this.btnViajes.IconZoom = 50D;
             this.btnViajes.IsTab = false;
-            this.btnViajes.Location = new System.Drawing.Point(25, 525);
+            this.btnViajes.Location = new System.Drawing.Point(25, 464);
             this.btnViajes.Name = "btnViajes";
             this.btnViajes.Normalcolor = System.Drawing.Color.Transparent;
             this.btnViajes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -724,43 +646,43 @@
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation9.AnimateOnlyDifferences = true;
-            animation9.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.BlindCoeff")));
-            animation9.LeafCoeff = 0F;
-            animation9.MaxTime = 1F;
-            animation9.MinTime = 0F;
-            animation9.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicCoeff")));
-            animation9.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation9.MosaicShift")));
-            animation9.MosaicSize = 1;
-            animation9.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation9.RotateCoeff = 0F;
-            animation9.RotateLimit = 0F;
-            animation9.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.ScaleCoeff")));
-            animation9.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation9.SlideCoeff")));
-            animation9.TimeCoeff = 2F;
-            animation9.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation9;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 1;
+            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 2F;
+            animation1.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation1;
             // 
             // AnimaacionSidebarBack
             // 
             this.AnimaacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimaacionSidebarBack.Cursor = null;
-            animation10.AnimateOnlyDifferences = true;
-            animation10.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.BlindCoeff")));
-            animation10.LeafCoeff = 0F;
-            animation10.MaxTime = 1F;
-            animation10.MinTime = 0F;
-            animation10.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicCoeff")));
-            animation10.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation10.MosaicShift")));
-            animation10.MosaicSize = 0;
-            animation10.Padding = new System.Windows.Forms.Padding(0);
-            animation10.RotateCoeff = 0F;
-            animation10.RotateLimit = 0F;
-            animation10.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.ScaleCoeff")));
-            animation10.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation10.SlideCoeff")));
-            animation10.TimeCoeff = 0F;
-            animation10.TransparencyCoeff = 0F;
-            this.AnimaacionSidebarBack.DefaultAnimation = animation10;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.AnimaacionSidebarBack.DefaultAnimation = animation2;
             // 
             // MoverDhasboard
             // 
@@ -817,7 +739,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnLugares;
         private Bunifu.Framework.UI.BunifuFlatButton btnAutobuses;
         private Bunifu.Framework.UI.BunifuFlatButton btnEmpresarios;
-        private Bunifu.Framework.UI.BunifuFlatButton btnMotoristas;
         private Bunifu.Framework.UI.BunifuFlatButton btnViajes;
         private Bunifu.Framework.UI.BunifuFlatButton dashboard1;
         private Bunifu.Framework.UI.BunifuSeparator LineaSidebar;
@@ -829,7 +750,6 @@
         private Bunifu.Framework.UI.BunifuDragControl MoverDhasboard;
         private Bunifu.Framework.UI.BunifuFlatButton btnUsuario;
         private System.Windows.Forms.Timer ColapzarUsuario;
-        private Bunifu.Framework.UI.BunifuFlatButton btnReportes;
         private System.Windows.Forms.Button cerrarSesion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

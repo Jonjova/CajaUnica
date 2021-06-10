@@ -110,3 +110,4 @@ C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Prese
 C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
 C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Usuarios.resources
 C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache
+C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Controles.resources

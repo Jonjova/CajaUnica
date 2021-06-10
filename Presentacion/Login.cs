@@ -8,20 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Dominio;
+using System.Runtime.InteropServices;
 
 namespace Presentacion
 {
     public partial class Login : Form
     {
+
         public Login()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
 
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -59,14 +58,16 @@ namespace Presentacion
 
         private void msgError(string msg)
         {
-            labelErrorMessage.Text = msg;
-            labelErrorMessage.Visible = true;
+            lblErrorMessage.Text = "    " + msg;
+           
+            lblErrorMessage.Visible = true;
+            
         }
         private void Logout(object sender,FormClosedEventArgs e) {
             txtContra.Text = "Contraseña";
             txtUsuario.UseSystemPasswordChar = false;
             txtUsuario.Text = "Usuario";
-            labelErrorMessage.Visible = false;
+            lblErrorMessage.Visible = false;
             this.Show();
         }
 
@@ -134,6 +135,21 @@ namespace Presentacion
             WindowState = FormWindowState.Normal;
             Restaurar.Visible = false;
             maximizar.Visible = true;
+        }
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }

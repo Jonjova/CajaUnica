@@ -115,12 +115,6 @@ namespace Presentacion
             WindowState = FormWindowState.Minimized;
         }
 
-        private void maximizar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Maximized;
-            maximizar.Visible = false;
-            Restaurar.Visible = true;
-        }
 
         private void Cerrar_Click(object sender, EventArgs e)
         {
@@ -130,12 +124,7 @@ namespace Presentacion
             }
         }
 
-        private void Restaurar_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Normal;
-            Restaurar.Visible = false;
-            maximizar.Visible = true;
-        }
+      
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]

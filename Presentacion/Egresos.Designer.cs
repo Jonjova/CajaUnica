@@ -67,6 +67,8 @@
             this.EgresosID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.Cerrar = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -92,6 +94,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.btnGuardar);
             this.tabPage1.Controls.Add(this.txtUsuarioCrea);
             this.tabPage1.Controls.Add(this.txtIdAutobuses);
@@ -116,13 +119,13 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackColor = System.Drawing.Color.DarkGreen;
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnGuardar.Location = new System.Drawing.Point(469, 450);
+            this.btnGuardar.Location = new System.Drawing.Point(311, 477);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(86, 34);
+            this.btnGuardar.Size = new System.Drawing.Size(185, 40);
             this.btnGuardar.TabIndex = 13;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -130,109 +133,111 @@
             // 
             // txtUsuarioCrea
             // 
+            this.txtUsuarioCrea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtUsuarioCrea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuarioCrea.FormattingEnabled = true;
-            this.txtUsuarioCrea.Location = new System.Drawing.Point(302, 366);
+            this.txtUsuarioCrea.Location = new System.Drawing.Point(417, 408);
             this.txtUsuarioCrea.Name = "txtUsuarioCrea";
-            this.txtUsuarioCrea.Size = new System.Drawing.Size(418, 28);
+            this.txtUsuarioCrea.Size = new System.Drawing.Size(280, 28);
             this.txtUsuarioCrea.TabIndex = 12;
             // 
             // txtIdAutobuses
             // 
+            this.txtIdAutobuses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.txtIdAutobuses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdAutobuses.FormattingEnabled = true;
-            this.txtIdAutobuses.Location = new System.Drawing.Point(302, 95);
+            this.txtIdAutobuses.Location = new System.Drawing.Point(417, 159);
             this.txtIdAutobuses.Name = "txtIdAutobuses";
-            this.txtIdAutobuses.Size = new System.Drawing.Size(418, 28);
+            this.txtIdAutobuses.Size = new System.Drawing.Size(280, 28);
             this.txtIdAutobuses.TabIndex = 11;
             // 
             // txtObservacion
             // 
             this.txtObservacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservacion.Location = new System.Drawing.Point(302, 305);
+            this.txtObservacion.Location = new System.Drawing.Point(417, 351);
             this.txtObservacion.Name = "txtObservacion";
-            this.txtObservacion.Size = new System.Drawing.Size(418, 26);
+            this.txtObservacion.Size = new System.Drawing.Size(280, 26);
             this.txtObservacion.TabIndex = 10;
             // 
             // txtNombreEgresos
             // 
             this.txtNombreEgresos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreEgresos.Location = new System.Drawing.Point(302, 245);
+            this.txtNombreEgresos.Location = new System.Drawing.Point(417, 290);
             this.txtNombreEgresos.Name = "txtNombreEgresos";
-            this.txtNombreEgresos.Size = new System.Drawing.Size(418, 26);
+            this.txtNombreEgresos.Size = new System.Drawing.Size(280, 26);
             this.txtNombreEgresos.TabIndex = 9;
             // 
             // txtPagoGastos
             // 
             this.txtPagoGastos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPagoGastos.Location = new System.Drawing.Point(302, 172);
+            this.txtPagoGastos.Location = new System.Drawing.Point(417, 221);
             this.txtPagoGastos.Name = "txtPagoGastos";
-            this.txtPagoGastos.Size = new System.Drawing.Size(418, 26);
+            this.txtPagoGastos.Size = new System.Drawing.Size(280, 26);
             this.txtPagoGastos.TabIndex = 8;
             // 
             // txtidegresos
             // 
             this.txtidegresos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtidegresos.Location = new System.Drawing.Point(302, 37);
+            this.txtidegresos.Location = new System.Drawing.Point(417, 103);
             this.txtidegresos.Name = "txtidegresos";
-            this.txtidegresos.Size = new System.Drawing.Size(418, 26);
+            this.txtidegresos.Size = new System.Drawing.Size(280, 26);
             this.txtidegresos.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(135, 366);
+            this.label6.Location = new System.Drawing.Point(189, 411);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 20);
+            this.label6.Size = new System.Drawing.Size(106, 20);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Usuario Crea";
+            this.label6.Text = "Usuario Crea:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(135, 251);
+            this.label5.Location = new System.Drawing.Point(189, 290);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 20);
+            this.label5.Size = new System.Drawing.Size(122, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Nombre egreso";
+            this.label5.Text = "Nombre egreso:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(135, 311);
+            this.label4.Location = new System.Drawing.Point(189, 351);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 20);
+            this.label4.Size = new System.Drawing.Size(101, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Observacion";
+            this.label4.Text = "Observación:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(135, 178);
+            this.label3.Location = new System.Drawing.Point(189, 221);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 20);
+            this.label3.Size = new System.Drawing.Size(114, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Pagos Gastos";
+            this.label3.Text = "Pagos Gastos:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(135, 103);
+            this.label2.Location = new System.Drawing.Point(189, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 20);
+            this.label2.Size = new System.Drawing.Size(155, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Id Autobuses";
+            this.label2.Text = "Seleccione Autobus:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(135, 37);
+            this.label1.Location = new System.Drawing.Point(189, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 20);
             this.label1.TabIndex = 0;
@@ -240,6 +245,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label18);
             this.tabPage2.Controls.Add(this.UsuarioCrea);
             this.tabPage2.Controls.Add(this.Observacion);
             this.tabPage2.Controls.Add(this.NombreEgresos);
@@ -259,66 +265,68 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(867, 544);
+            this.tabPage2.Size = new System.Drawing.Size(867, 573);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Editar/ Eliminar";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // UsuarioCrea
             // 
+            this.UsuarioCrea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.UsuarioCrea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioCrea.FormattingEnabled = true;
-            this.UsuarioCrea.Location = new System.Drawing.Point(288, 420);
+            this.UsuarioCrea.Location = new System.Drawing.Point(411, 425);
             this.UsuarioCrea.Name = "UsuarioCrea";
-            this.UsuarioCrea.Size = new System.Drawing.Size(418, 28);
+            this.UsuarioCrea.Size = new System.Drawing.Size(280, 28);
             this.UsuarioCrea.TabIndex = 51;
             // 
             // Observacion
             // 
             this.Observacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Observacion.Location = new System.Drawing.Point(288, 358);
+            this.Observacion.Location = new System.Drawing.Point(411, 368);
             this.Observacion.Name = "Observacion";
-            this.Observacion.Size = new System.Drawing.Size(418, 26);
+            this.Observacion.Size = new System.Drawing.Size(280, 26);
             this.Observacion.TabIndex = 50;
             // 
             // NombreEgresos
             // 
             this.NombreEgresos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NombreEgresos.Location = new System.Drawing.Point(288, 290);
+            this.NombreEgresos.Location = new System.Drawing.Point(411, 312);
             this.NombreEgresos.Name = "NombreEgresos";
-            this.NombreEgresos.Size = new System.Drawing.Size(418, 26);
+            this.NombreEgresos.Size = new System.Drawing.Size(280, 26);
             this.NombreEgresos.TabIndex = 49;
             // 
             // pagosGastos
             // 
             this.pagosGastos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pagosGastos.Location = new System.Drawing.Point(288, 222);
+            this.pagosGastos.Location = new System.Drawing.Point(411, 254);
             this.pagosGastos.Name = "pagosGastos";
-            this.pagosGastos.Size = new System.Drawing.Size(418, 26);
+            this.pagosGastos.Size = new System.Drawing.Size(280, 26);
             this.pagosGastos.TabIndex = 48;
             // 
             // idAutobuses
             // 
+            this.idAutobuses.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.idAutobuses.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idAutobuses.FormattingEnabled = true;
-            this.idAutobuses.Location = new System.Drawing.Point(288, 140);
+            this.idAutobuses.Location = new System.Drawing.Point(411, 183);
             this.idAutobuses.Name = "idAutobuses";
-            this.idAutobuses.Size = new System.Drawing.Size(418, 28);
+            this.idAutobuses.Size = new System.Drawing.Size(280, 28);
             this.idAutobuses.TabIndex = 47;
             // 
             // idEgresos
             // 
             this.idEgresos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.idEgresos.Location = new System.Drawing.Point(288, 22);
+            this.idEgresos.Location = new System.Drawing.Point(301, 97);
             this.idEgresos.Name = "idEgresos";
-            this.idEgresos.Size = new System.Drawing.Size(418, 26);
+            this.idEgresos.Size = new System.Drawing.Size(298, 26);
             this.idEgresos.TabIndex = 46;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(148, 428);
+            this.label13.Location = new System.Drawing.Point(202, 433);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(102, 20);
             this.label13.TabIndex = 45;
@@ -328,20 +336,20 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(148, 358);
+            this.label12.Location = new System.Drawing.Point(202, 374);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(97, 20);
+            this.label12.Size = new System.Drawing.Size(101, 20);
             this.label12.TabIndex = 44;
-            this.label12.Text = "Observacion";
+            this.label12.Text = "Observación:";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.Brown;
+            this.btnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.ForeColor = System.Drawing.Color.Snow;
-            this.btnEliminar.Location = new System.Drawing.Point(614, 485);
+            this.btnEliminar.Location = new System.Drawing.Point(483, 499);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(92, 31);
+            this.btnEliminar.Size = new System.Drawing.Size(148, 37);
             this.btnEliminar.TabIndex = 43;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
@@ -349,12 +357,12 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.ForeColor = System.Drawing.Color.Snow;
-            this.btnActualizar.Location = new System.Drawing.Point(288, 485);
+            this.btnActualizar.Location = new System.Drawing.Point(276, 499);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(96, 31);
+            this.btnActualizar.Size = new System.Drawing.Size(148, 37);
             this.btnActualizar.TabIndex = 42;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = false;
@@ -362,12 +370,12 @@
             // 
             // btnObtener
             // 
-            this.btnObtener.BackColor = System.Drawing.Color.SlateGray;
+            this.btnObtener.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
             this.btnObtener.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnObtener.ForeColor = System.Drawing.Color.Snow;
-            this.btnObtener.Location = new System.Drawing.Point(454, 80);
+            this.btnObtener.Location = new System.Drawing.Point(635, 92);
             this.btnObtener.Name = "btnObtener";
-            this.btnObtener.Size = new System.Drawing.Size(97, 32);
+            this.btnObtener.Size = new System.Drawing.Size(148, 37);
             this.btnObtener.TabIndex = 41;
             this.btnObtener.Text = "Consultar";
             this.btnObtener.UseVisualStyleBackColor = false;
@@ -377,37 +385,37 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(148, 290);
+            this.label11.Location = new System.Drawing.Point(202, 318);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 20);
+            this.label11.Size = new System.Drawing.Size(122, 20);
             this.label11.TabIndex = 5;
-            this.label11.Text = "Nombre egreso";
+            this.label11.Text = "Nombre egreso:";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(148, 222);
+            this.label10.Location = new System.Drawing.Point(204, 254);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(110, 20);
+            this.label10.Size = new System.Drawing.Size(114, 20);
             this.label10.TabIndex = 3;
-            this.label10.Text = "Pagos Gastos";
+            this.label10.Text = "Pagos Gastos:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(153, 148);
+            this.label9.Location = new System.Drawing.Point(204, 186);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 20);
+            this.label9.Size = new System.Drawing.Size(155, 20);
             this.label9.TabIndex = 2;
-            this.label9.Text = "Id Autobuses";
+            this.label9.Text = "Seleccione Autobus:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(153, 28);
+            this.label8.Location = new System.Drawing.Point(176, 101);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 20);
             this.label8.TabIndex = 1;
@@ -423,7 +431,7 @@
             this.tabPage3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(867, 544);
+            this.tabPage3.Size = new System.Drawing.Size(867, 573);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Mostrar";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -439,27 +447,27 @@
             // 
             // btnVerTodos
             // 
-            this.btnVerTodos.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnVerTodos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
             this.btnVerTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVerTodos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVerTodos.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnVerTodos.Location = new System.Drawing.Point(662, 22);
+            this.btnVerTodos.Location = new System.Drawing.Point(676, 19);
             this.btnVerTodos.Name = "btnVerTodos";
-            this.btnVerTodos.Size = new System.Drawing.Size(115, 29);
+            this.btnVerTodos.Size = new System.Drawing.Size(143, 34);
             this.btnVerTodos.TabIndex = 3;
-            this.btnVerTodos.Text = "Ver Todos";
+            this.btnVerTodos.Text = "Consultar Todos";
             this.btnVerTodos.UseVisualStyleBackColor = false;
             this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
             // 
             // btnEgresosID
             // 
-            this.btnEgresosID.BackColor = System.Drawing.Color.SlateGray;
+            this.btnEgresosID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
             this.btnEgresosID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEgresosID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEgresosID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEgresosID.Location = new System.Drawing.Point(547, 22);
+            this.btnEgresosID.Location = new System.Drawing.Point(506, 19);
             this.btnEgresosID.Name = "btnEgresosID";
-            this.btnEgresosID.Size = new System.Drawing.Size(91, 29);
+            this.btnEgresosID.Size = new System.Drawing.Size(143, 34);
             this.btnEgresosID.TabIndex = 2;
             this.btnEgresosID.Text = "Consultar";
             this.btnEgresosID.UseVisualStyleBackColor = false;
@@ -470,14 +478,14 @@
             this.EgresosID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EgresosID.Location = new System.Drawing.Point(163, 22);
             this.EgresosID.Name = "EgresosID";
-            this.EgresosID.Size = new System.Drawing.Size(350, 26);
+            this.EgresosID.Size = new System.Drawing.Size(281, 26);
             this.EgresosID.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(34, 28);
+            this.label7.Location = new System.Drawing.Point(45, 25);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(84, 20);
             this.label7.TabIndex = 0;
@@ -496,6 +504,26 @@
             this.Cerrar.TabIndex = 14;
             this.Cerrar.TabStop = false;
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(305, 27);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(223, 31);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Ingresar Registro";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(270, 23);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(298, 31);
+            this.label18.TabIndex = 52;
+            this.label18.Text = "Mantenimiento Egresos";
             // 
             // Egresos
             // 
@@ -560,5 +588,7 @@
         private System.Windows.Forms.TextBox pagosGastos;
         private System.Windows.Forms.ComboBox idAutobuses;
         private System.Windows.Forms.PictureBox Cerrar;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label18;
     }
 }

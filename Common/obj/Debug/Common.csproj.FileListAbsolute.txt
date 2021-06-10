@@ -12,3 +12,8 @@ C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.cs
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.dll
 C:\Users\ADMIN\Documents\Visual Studio 2015\CajaUnica\Common\obj\Debug\Common.pdb
 C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Common\bin\Debug\Common.dll
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Common\bin\Debug\Common.pdb
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Common\obj\Debug\Common.dll
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Common\obj\Debug\Common.pdb

@@ -112,7 +112,7 @@ namespace Presentacion
         // BOTON CONTROLES
         private void btnControles_Click(object sender, EventArgs e)
         {
-
+            AbrirFormEnPanel(new Controles());
         }
 
         // BOTON USUARIOS

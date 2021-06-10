@@ -86,3 +86,27 @@ C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Presentacion\obj\Debug\Presentacion.Us
 C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Egresos.resources
 C:\Users\josue\Desktop\PROGRA-2\CajaUnica\Presentacion\obj\Debug\Presentacion.Egresos.resources
 C:\Users\jonjo\Documents\Visual Studio 2015\Projects\CajaUnica\Presentacion\obj\Debug\Presentacion.Lugares_Form.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\AccesoDatos.dll
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\Common.dll
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\Dominio.dll
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\AccesoDatos.pdb
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\Common.pdb
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\bin\Debug\Dominio.pdb
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Controles.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.DiseForm.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Egresos.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Empresarios.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.FormAutobuses.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.FormDetalleViajes.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Login.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Lugares_Form.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Principal.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.Usuarios.resources
+C:\Users\josue\Desktop\PROGRA-1\CajaUnica\CajaUnica\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.Cache

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Empresarios));
             this.Insertar = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.txtId = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -73,7 +74,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label16 = new System.Windows.Forms.Label();
             this.Cerrar = new System.Windows.Forms.PictureBox();
-            this.txtId = new System.Windows.Forms.ComboBox();
             this.Insertar.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -121,6 +121,15 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Crear Empresario";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // txtId
+            // 
+            this.txtId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtId.FormattingEnabled = true;
+            this.txtId.Location = new System.Drawing.Point(206, 221);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(191, 28);
+            this.txtId.TabIndex = 26;
             // 
             // label17
             // 
@@ -376,6 +385,7 @@
             // 
             this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.ForeColor = System.Drawing.SystemColors.Window;
             this.button6.Location = new System.Drawing.Point(513, 577);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
@@ -389,6 +399,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(7)))));
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.SystemColors.Info;
             this.button5.Location = new System.Drawing.Point(273, 577);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
@@ -586,15 +597,6 @@
             this.Cerrar.TabIndex = 13;
             this.Cerrar.TabStop = false;
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
-            // 
-            // txtId
-            // 
-            this.txtId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtId.FormattingEnabled = true;
-            this.txtId.Location = new System.Drawing.Point(206, 221);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(191, 28);
-            this.txtId.TabIndex = 26;
             // 
             // Empresarios
             // 

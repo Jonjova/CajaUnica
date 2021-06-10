@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DiseForm));
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation6 = new BunifuAnimatorNS.Animation();
             this.ManuTop = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -213,9 +213,9 @@
             this.dashboard.ForeColor = System.Drawing.Color.White;
             this.dashboard.Location = new System.Drawing.Point(70, 21);
             this.dashboard.Name = "dashboard";
-            this.dashboard.Size = new System.Drawing.Size(112, 20);
+            this.dashboard.Size = new System.Drawing.Size(113, 20);
             this.dashboard.TabIndex = 1;
-            this.dashboard.Text = "DASHBOARD";
+            this.dashboard.Text = "BIENVENIDO";
             // 
             // MenuSidebar
             // 
@@ -283,6 +283,7 @@
             this.AnimaacionSidebarBack.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.bunifuFlatButton1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
             this.bunifuFlatButton1.Iconimage_right = null;
@@ -296,6 +297,7 @@
             this.bunifuFlatButton1.IconZoom = 50D;
             this.bunifuFlatButton1.IsTab = false;
             this.bunifuFlatButton1.Location = new System.Drawing.Point(25, 539);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -320,6 +322,7 @@
             this.AnimaacionSidebarBack.SetDecoration(this.btnControles, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.btnControles, BunifuAnimatorNS.DecorationType.None);
             this.btnControles.DisabledColor = System.Drawing.Color.Gray;
+            this.btnControles.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnControles.Iconcolor = System.Drawing.Color.Transparent;
             this.btnControles.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnControles.Iconimage")));
             this.btnControles.Iconimage_right = null;
@@ -333,6 +336,7 @@
             this.btnControles.IconZoom = 50D;
             this.btnControles.IsTab = false;
             this.btnControles.Location = new System.Drawing.Point(25, 135);
+            this.btnControles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnControles.Name = "btnControles";
             this.btnControles.Normalcolor = System.Drawing.Color.Transparent;
             this.btnControles.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -357,6 +361,7 @@
             this.AnimaacionSidebarBack.SetDecoration(this.btnUsuario, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.btnUsuario, BunifuAnimatorNS.DecorationType.None);
             this.btnUsuario.DisabledColor = System.Drawing.Color.Gray;
+            this.btnUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUsuario.Iconcolor = System.Drawing.Color.Transparent;
             this.btnUsuario.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnUsuario.Iconimage")));
             this.btnUsuario.Iconimage_right = null;
@@ -370,6 +375,7 @@
             this.btnUsuario.IconZoom = 50D;
             this.btnUsuario.IsTab = false;
             this.btnUsuario.Location = new System.Drawing.Point(25, 200);
+            this.btnUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUsuario.Name = "btnUsuario";
             this.btnUsuario.Normalcolor = System.Drawing.Color.Transparent;
             this.btnUsuario.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -412,6 +418,7 @@
             this.AnimaacionSidebarBack.SetDecoration(this.btnLugares, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.btnLugares, BunifuAnimatorNS.DecorationType.None);
             this.btnLugares.DisabledColor = System.Drawing.Color.Gray;
+            this.btnLugares.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLugares.Iconcolor = System.Drawing.Color.Transparent;
             this.btnLugares.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnLugares.Iconimage")));
             this.btnLugares.Iconimage_right = null;
@@ -425,6 +432,7 @@
             this.btnLugares.IconZoom = 50D;
             this.btnLugares.IsTab = false;
             this.btnLugares.Location = new System.Drawing.Point(25, 265);
+            this.btnLugares.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLugares.Name = "btnLugares";
             this.btnLugares.Normalcolor = System.Drawing.Color.Transparent;
             this.btnLugares.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -449,6 +457,7 @@
             this.AnimaacionSidebarBack.SetDecoration(this.btnAutobuses, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.btnAutobuses, BunifuAnimatorNS.DecorationType.None);
             this.btnAutobuses.DisabledColor = System.Drawing.Color.Gray;
+            this.btnAutobuses.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAutobuses.Iconcolor = System.Drawing.Color.Transparent;
             this.btnAutobuses.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnAutobuses.Iconimage")));
             this.btnAutobuses.Iconimage_right = null;
@@ -462,6 +471,7 @@
             this.btnAutobuses.IconZoom = 50D;
             this.btnAutobuses.IsTab = false;
             this.btnAutobuses.Location = new System.Drawing.Point(25, 395);
+            this.btnAutobuses.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAutobuses.Name = "btnAutobuses";
             this.btnAutobuses.Normalcolor = System.Drawing.Color.Transparent;
             this.btnAutobuses.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -486,6 +496,7 @@
             this.AnimaacionSidebarBack.SetDecoration(this.btnEmpresarios, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.btnEmpresarios, BunifuAnimatorNS.DecorationType.None);
             this.btnEmpresarios.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEmpresarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpresarios.Iconcolor = System.Drawing.Color.Transparent;
             this.btnEmpresarios.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEmpresarios.Iconimage")));
             this.btnEmpresarios.Iconimage_right = null;
@@ -499,6 +510,7 @@
             this.btnEmpresarios.IconZoom = 50D;
             this.btnEmpresarios.IsTab = false;
             this.btnEmpresarios.Location = new System.Drawing.Point(25, 330);
+            this.btnEmpresarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEmpresarios.Name = "btnEmpresarios";
             this.btnEmpresarios.Normalcolor = System.Drawing.Color.Transparent;
             this.btnEmpresarios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -523,6 +535,7 @@
             this.AnimaacionSidebarBack.SetDecoration(this.btnViajes, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.btnViajes, BunifuAnimatorNS.DecorationType.None);
             this.btnViajes.DisabledColor = System.Drawing.Color.Gray;
+            this.btnViajes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViajes.Iconcolor = System.Drawing.Color.Transparent;
             this.btnViajes.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnViajes.Iconimage")));
             this.btnViajes.Iconimage_right = null;
@@ -536,6 +549,7 @@
             this.btnViajes.IconZoom = 50D;
             this.btnViajes.IsTab = false;
             this.btnViajes.Location = new System.Drawing.Point(25, 464);
+            this.btnViajes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnViajes.Name = "btnViajes";
             this.btnViajes.Normalcolor = System.Drawing.Color.Transparent;
             this.btnViajes.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -560,6 +574,7 @@
             this.AnimaacionSidebarBack.SetDecoration(this.dashboard1, BunifuAnimatorNS.DecorationType.None);
             this.AnimacionSidebar.SetDecoration(this.dashboard1, BunifuAnimatorNS.DecorationType.None);
             this.dashboard1.DisabledColor = System.Drawing.Color.Gray;
+            this.dashboard1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dashboard1.Iconcolor = System.Drawing.Color.Transparent;
             this.dashboard1.Iconimage = ((System.Drawing.Image)(resources.GetObject("dashboard1.Iconimage")));
             this.dashboard1.Iconimage_right = null;
@@ -573,6 +588,7 @@
             this.dashboard1.IconZoom = 50D;
             this.dashboard1.IsTab = false;
             this.dashboard1.Location = new System.Drawing.Point(25, 70);
+            this.dashboard1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dashboard1.Name = "dashboard1";
             this.dashboard1.Normalcolor = System.Drawing.Color.Transparent;
             this.dashboard1.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -611,7 +627,7 @@
             this.Grupo6.Name = "Grupo6";
             this.Grupo6.Size = new System.Drawing.Size(94, 20);
             this.Grupo6.TabIndex = 2;
-            this.Grupo6.Text = "Caja Unica";
+            this.Grupo6.Text = "Caja Única";
             // 
             // pictureBox1
             // 
@@ -646,43 +662,43 @@
             // 
             this.AnimacionSidebar.AnimationType = BunifuAnimatorNS.AnimationType.Particles;
             this.AnimacionSidebar.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 1;
-            animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 2F;
-            animation1.TransparencyCoeff = 0F;
-            this.AnimacionSidebar.DefaultAnimation = animation1;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 1;
+            animation5.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 2F;
+            animation5.TransparencyCoeff = 0F;
+            this.AnimacionSidebar.DefaultAnimation = animation5;
             // 
             // AnimaacionSidebarBack
             // 
             this.AnimaacionSidebarBack.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.AnimaacionSidebarBack.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.AnimaacionSidebarBack.DefaultAnimation = animation2;
+            animation6.AnimateOnlyDifferences = true;
+            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
+            animation6.LeafCoeff = 0F;
+            animation6.MaxTime = 1F;
+            animation6.MinTime = 0F;
+            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
+            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
+            animation6.MosaicSize = 0;
+            animation6.Padding = new System.Windows.Forms.Padding(0);
+            animation6.RotateCoeff = 0F;
+            animation6.RotateLimit = 0F;
+            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
+            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
+            animation6.TimeCoeff = 0F;
+            animation6.TransparencyCoeff = 0F;
+            this.AnimaacionSidebarBack.DefaultAnimation = animation6;
             // 
             // MoverDhasboard
             // 

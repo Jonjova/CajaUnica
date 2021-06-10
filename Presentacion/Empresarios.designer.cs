@@ -38,7 +38,6 @@
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label18 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.txtTel = new System.Windows.Forms.TextBox();
@@ -72,8 +72,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label16 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.Cerrar = new System.Windows.Forms.PictureBox();
+            this.txtId = new System.Windows.Forms.ComboBox();
             this.Insertar.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -97,6 +97,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.txtId);
             this.tabPage1.Controls.Add(this.label17);
             this.tabPage1.Controls.Add(this.comboBox2);
             this.tabPage1.Controls.Add(this.comboBox1);
@@ -104,7 +105,6 @@
             this.tabPage1.Controls.Add(this.txtDireccion);
             this.tabPage1.Controls.Add(this.txtApellido);
             this.tabPage1.Controls.Add(this.txtNombre);
-            this.tabPage1.Controls.Add(this.txtId);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.label7);
@@ -189,15 +189,6 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(194, 26);
             this.txtNombre.TabIndex = 9;
-            // 
-            // txtId
-            // 
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(203, 223);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(194, 26);
-            this.txtId.TabIndex = 8;
             // 
             // button1
             // 
@@ -318,6 +309,16 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Actualizar/Eliminar Empresario";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(285, 61);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(336, 31);
+            this.label18.TabIndex = 29;
+            this.label18.Text = "Mantenimiento Empresario";
             // 
             // comboBox4
             // 
@@ -572,16 +573,6 @@
             this.label16.TabIndex = 11;
             this.label16.Text = "EMPRESARIOS";
             // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(285, 61);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(336, 31);
-            this.label18.TabIndex = 29;
-            this.label18.Text = "Mantenimiento Empresario";
-            // 
             // Cerrar
             // 
             this.Cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -595,6 +586,15 @@
             this.Cerrar.TabIndex = 13;
             this.Cerrar.TabStop = false;
             this.Cerrar.Click += new System.EventHandler(this.Cerrar_Click);
+            // 
+            // txtId
+            // 
+            this.txtId.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtId.FormattingEnabled = true;
+            this.txtId.Location = new System.Drawing.Point(206, 221);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(191, 28);
+            this.txtId.TabIndex = 26;
             // 
             // Empresarios
             // 
@@ -641,7 +641,6 @@
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -671,5 +670,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox Cerrar;
+        private System.Windows.Forms.ComboBox txtId;
     }
 }

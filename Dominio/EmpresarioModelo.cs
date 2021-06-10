@@ -82,7 +82,7 @@ namespace Dominio
         //listar empresarios
         public DataSet ConsultarTodosEmpresarios()
         {
-            string cadenaSQLConsultar = "SELECT * FROM TBL_EMPRESARIOS";
+            string cadenaSQLConsultar = "SELECT * FROM MOSTRAR_EMPRESARIOS;";
             DataSet ConsultaResultante = ConsultarSQL(cadenaSQLConsultar);
             return ConsultaResultante;
         }
@@ -136,15 +136,12 @@ namespace Dominio
         }
 
         //select max id
-        /*public void generarId(TextBox tx)
+        public DataSet LlenarIdEMPRESARIO()
         {
-           DataTable info = new DataTable();
-           string consulta = "select max(ID_EMPRESARIO)+1 from TBL_EMPRESARIOS";
-           SqlCommand cmd = new SqlCommand(consulta, conn);
-           SqlDataAdapter adaptador = new SqlDataAdapter(cmd);
-           adaptador.Fill(info);
-           tx.Text = info.Rows[0][0].ToString(); 
-        }*/ 
-     
+            string cadenaSQLConsultar = "SELECT MAX(ID_EMPRESARIO) + 1 AS ID_EMPRESARIO FROM TBL_EMPRESARIOS";
+            DataSet ConsultaResultante = ConsultarSQL(cadenaSQLConsultar);
+            return ConsultaResultante;
+        }
+
     }
 }

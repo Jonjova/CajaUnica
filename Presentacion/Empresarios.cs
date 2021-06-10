@@ -19,12 +19,31 @@ namespace Presentacion
         {
             InitializeComponent();
             //métodos de llenado de combobox
+            obtIDempresario();
             obtDepartamento();
             obtSexo();
             
         }
+        string msg = ""; // VALIDACIONES
 
         //Llenado combobox de empresarios 
+        private void obtIDempresario()
+        {
+            EmpresarioModelo objEmp = new EmpresarioModelo();
+            try
+            {
+                DataSet DatosEmpresarios = objEmp.LlenarIdEMPRESARIO();
+                txtId.DataSource = DatosEmpresarios.Tables["TablaConsultada"].DefaultView;
+                txtId.DisplayMember = "ID_EMPRESARIO";
+                txtId.ValueMember = "ID_EMPRESARIO";
+                
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show("Fatality!: " + Ex.Message + " " + objEmp.Mensaje);
+            }
+        }
+
         private void obtDepartamento()
         {
             EmpresarioModelo objEmp = new EmpresarioModelo();
@@ -66,6 +85,53 @@ namespace Presentacion
             }
         }
 
+        // VALIDAR INSERT EMPRESARIOS
+        public void validarInsertEmpresarios()
+        {
+            
+           if (txtNombre.Text == "")
+            {
+                msg = msg + "\n!!! CAMPO NOMBRE REQUERIDO !!!";
+            }
+            if (txtApellido.Text == "")
+            {
+                msg = msg + "\n!!! CAMPO APELLIDO REQUERIDO !!!";
+            }
+            if (txtTelefono.Text=="")
+            {
+                msg = msg + "\n!!! CAMPO TELEFONO REQUERIDO !!!";
+            }
+            if(txtDireccion.Text=="")
+            {
+                msg = msg + "\n!!! CAMPO DIRECCIÓN REQUERIDO !!!";
+            }
+            MessageBox.Show(msg);
+            msg = "";
+        }
+
+        // VALIDAR UPDATE EMPRESARIOS
+       public void validarUpdateEmpresarios()
+        {
+            if (txtNom.Text == "")
+            {
+                msg = msg + "\n!!! CAMPO NOMBRE REQUERIDO !!!";
+            }
+            if (txtApe.Text == "")
+            {
+                msg = msg + "\n!!! CAMPO APELLIDO REQUERIDO !!!";
+            }
+            if (txtTel.Text == "")
+            {
+                msg = msg + "\n!!! CAMPO TELEFONO REQUERIDO !!!";
+            }
+            if (txtDir.Text == "")
+            {
+                msg = msg + "\n!!! CAMPO DIRECCIÓN REQUERIDO !!!";
+            }               
+            MessageBox.Show(msg);
+            msg = "";
+        }
+
         //insert
         private void button1_Click(object sender, EventArgs e)
         {
@@ -80,9 +146,9 @@ namespace Presentacion
                 objEmp.id_departamento = int.Parse(comboBox1.SelectedValue.ToString());
                 objEmp.id_sexo = int.Parse(comboBox2.SelectedValue.ToString());
 
-                bool respuestaSQL = objEmp.InsertarEmpresario();
-                if (respuestaSQL == true)
+                if (txtNombre.Text != "" && txtApellido.Text!="" && txtTelefono.Text!="" && txtDireccion.Text!="")
                 {
+                    bool respuestaSQL = objEmp.InsertarEmpresario();
                     MessageBox.Show("Los datos del nuevo empresario fueron insertados correctamente");
                     txtId.Text = "";
                     txtNombre.Text = "";
@@ -91,15 +157,17 @@ namespace Presentacion
                     txtTelefono.Text = "";
                     comboBox1.Text = "";
                     comboBox2.Text = "";
+                    obtIDempresario();//select max
                 }
+                
                 else
                 {
-                    MessageBox.Show(objEmp.Mensaje);
+                    validarInsertEmpresarios();
                 }
             }
             catch (Exception Ex)
             {
-                MessageBox.Show("Error!: " + Ex.Message + " " + objEmp.Mensaje);
+                 MessageBox.Show("Error!: " + Ex.Message + " " + objEmp.Mensaje);
             }
                         
         }
@@ -126,24 +194,28 @@ namespace Presentacion
         {
             String codEmp = txtIdEMP.Text;
             EmpresarioModelo objEmp = new EmpresarioModelo();
-            
-            try
+
+            if (txtIdEMP.Text == "")
+            {
+                MessageBox.Show("!!! ID EMPRESARIO REQUERIDO !!! \nIngrese un identificador");
+            }
+            else
             {
                 DataSet DatosEmpresarios = objEmp.ConsultarEmpresario(codEmp);
-
                 dataGridView1.DataSource = DatosEmpresarios.Tables["TablaConsultada"].DefaultView;
-
-            }
-            catch (Exception Ex)
-            {
-                MessageBox.Show("Fatality!: " + Ex.Message + " " + objEmp.Mensaje);
-            }
-        }
+            }       
+         }
         
         private void button4_Click(object sender, EventArgs e)
         {
             try
             {
+                if (txtIdEmpresario.Text == "")
+                {
+                    MessageBox.Show("!!! ID EMPRESARIO REQUERIDO !!! \nIngrese un identificador");
+                }
+                else
+                {
                 DataSet DatosEmpresario = objEmp.ConsultarEmpresario(txtIdEmpresario.Text);
                 int numregistros = DatosEmpresario.Tables["TablaConsultada"].Rows.Count;
                 if (numregistros == 0)
@@ -158,6 +230,7 @@ namespace Presentacion
                     txtTel.Text = DatosEmpresario.Tables["TablaConsultada"].Rows[0]["TELEFONO"].ToString();
                     comboBox3.SelectedValue = DatosEmpresario.Tables["TablaConsultada"].Rows[0]["ID_DEPARTAMENTO"].ToString();
                     comboBox4.SelectedValue = DatosEmpresario.Tables["TablaConsultada"].Rows[0]["ID_SEXO"].ToString();
+                }
                 }
             }
             catch (Exception Ex)
@@ -179,24 +252,26 @@ namespace Presentacion
                 objEmp.usuarioCrea = 1;
                 objEmp.id_departamento = int.Parse(comboBox3.SelectedValue.ToString());
                 objEmp.id_sexo = int.Parse(comboBox4.SelectedValue.ToString());
-               
-                bool respuestaSQL = objEmp.ActualizarEmpresario();
-                if (respuestaSQL == true)
-                {
-                    MessageBox.Show("Los datos fueron actualizados correctamente");
-                    txtIdEmpresario.Text = "";
-                    txtNom.Text = "";
-                    txtApe.Text = "";
-                    txtDir.Text = "";
-                    txtTel.Text = "";
-                    comboBox3.Text = "";
-                    comboBox4.Text = "";
+
+                    if (txtNom.Text != "" && txtApe.Text != "" && txtTel.Text != "" && txtDir.Text != "")
+                    {
+                        bool respuestaSQL = objEmp.ActualizarEmpresario();
+                        MessageBox.Show("Los datos fueron actualizados correctamente");
+                        txtIdEmpresario.Text = "";
+                        txtNom.Text = "";
+                        txtApe.Text = "";
+                        txtDir.Text = "";
+                        txtTel.Text = "";
+                        comboBox3.Text = "";
+                        comboBox4.Text = "";
+                    }
+                    else
+                    {
+                        validarUpdateEmpresarios();
+                    }
                 }
-                else
-                {
-                    MessageBox.Show(objEmp.Mensaje);
-                }
-            }
+                
+            
             catch (Exception Ex)
             {
                 MessageBox.Show("Fatality!: " + Ex.Message + " " + objEmp.Mensaje);
